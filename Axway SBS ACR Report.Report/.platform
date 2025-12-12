@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Axway SBS ACR Report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7d3b64fe-0046-4baf-b5cb-b1a016897e0e"
+  }
+}
