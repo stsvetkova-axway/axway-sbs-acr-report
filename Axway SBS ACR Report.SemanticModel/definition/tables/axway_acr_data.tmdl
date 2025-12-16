@@ -1,0 +1,347 @@
+table axway_acr_data
+	lineageTag: 436fdcfa-0797-4f04-af62-b570f13523ae
+
+	column employee_name
+		dataType: string
+		lineageTag: 635a0951-435a-4235-8e2f-a95a05884e47
+		summarizeBy: none
+		sourceColumn: employee_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_id
+		dataType: string
+		lineageTag: 19c323dc-8f4d-4519-8907-0d6f5438310d
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: 22c1943f-0eda-439e-b1e0-9424e393a58e
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column hire_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 31163292-06e7-443c-bf50-75cbb83a3032
+		summarizeBy: none
+		sourceColumn: hire_date
+
+		variation Variation
+			isDefault
+			relationship: e6dff4be-a23a-4f87-9ae9-c66deb59fe9f
+			defaultHierarchy: LocalDateTable_800a5af8-f679-424e-ab7c-a745963969c4.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column job_title
+		dataType: string
+		lineageTag: ab22acd1-bf70-4a8b-9289-d6f3de5d3dd7
+		summarizeBy: none
+		sourceColumn: job_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column job_grade
+		dataType: string
+		lineageTag: 0d4d4626-2c45-4ff1-81a4-24d205199615
+		summarizeBy: none
+		sourceColumn: job_grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column direct_manager
+		dataType: string
+		lineageTag: 304a7946-ad41-48ff-886e-4ec58c089bb6
+		summarizeBy: none
+		sourceColumn: direct_manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column direct_manager_email
+		dataType: string
+		lineageTag: 0d111dbb-3c87-4c4a-ba31-8a913a9b65cd
+		summarizeBy: none
+		sourceColumn: direct_manager_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column compensation_manager
+		dataType: string
+		lineageTag: 51738dd3-cf46-49fe-94ae-67504748a9da
+		summarizeBy: none
+		sourceColumn: compensation_manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column compensation_manager_email
+		dataType: string
+		lineageTag: f73f00c2-e8f6-47d3-8716-a0877ae8f0eb
+		summarizeBy: none
+		sourceColumn: compensation_manager_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column general_manager
+		dataType: string
+		lineageTag: 8b06acdb-0745-499e-a243-363753a64409
+		summarizeBy: none
+		sourceColumn: general_manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column general_manager_email
+		dataType: string
+		lineageTag: 8075e9fa-cd9e-4e56-af4b-d3ad54afed91
+		summarizeBy: none
+		sourceColumn: general_manager_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column executive
+		dataType: string
+		lineageTag: d5b29a40-020e-43e1-aad7-371ac4743ed7
+		summarizeBy: none
+		sourceColumn: executive
+
+		annotation SummarizationSetBy = Automatic
+
+	column executive_email
+		dataType: string
+		lineageTag: 5b1880cd-1bee-46e8-9050-5e13b6493315
+		summarizeBy: none
+		sourceColumn: executive_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column ft_pct
+		dataType: double
+		lineageTag: 56d60bf8-911d-4e26-866d-e906374b1839
+		summarizeBy: sum
+		sourceColumn: ft_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column currency
+		dataType: string
+		lineageTag: 02722d6b-2eb7-42ef-93fb-c5cd63de2ba2
+		summarizeBy: none
+		sourceColumn: currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_annual_base
+		dataType: double
+		lineageTag: 9abd29d8-ef63-4fe8-8e7e-8967b0c4ef67
+		summarizeBy: sum
+		sourceColumn: current_annual_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column current_market_pct_base
+		dataType: double
+		lineageTag: 36f5f485-79d3-4d8f-8c11-12f01b30fab2
+		summarizeBy: sum
+		sourceColumn: current_market_pct_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column variable_type
+		dataType: string
+		lineageTag: e14339ff-0f08-470f-92d7-bfbe3c304ada
+		summarizeBy: none
+		sourceColumn: variable_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_annual_otv_amount
+		dataType: double
+		lineageTag: eb600c5d-d483-40f4-8731-e0eeeb3efffd
+		summarizeBy: sum
+		sourceColumn: current_annual_otv_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column current_otv_pctofbase
+		dataType: double
+		lineageTag: 414bf426-f251-43d0-8c32-5371eac420c5
+		summarizeBy: sum
+		sourceColumn: current_otv_pctofbase
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column current_ttc
+		dataType: double
+		lineageTag: 132c120e-e1e7-4b54-a16a-e93ad7f21466
+		summarizeBy: sum
+		sourceColumn: current_ttc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column current_market_pctofttc
+		dataType: double
+		lineageTag: 0469dd70-ab36-4058-bf2f-23d5b7238cb1
+		summarizeBy: sum
+		sourceColumn: current_market_pctofttc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column performance_rating
+		dataType: string
+		lineageTag: ed018220-ad6b-4cc5-8c53-037ab89b8e32
+		summarizeBy: none
+		sourceColumn: performance_rating
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget_guidelines
+		dataType: string
+		lineageTag: 006d7c05-dcf5-41a6-90bb-5cacc6ac0a07
+		summarizeBy: none
+		sourceColumn: budget_guidelines
+
+		annotation SummarizationSetBy = Automatic
+
+	column promotion_correction
+		dataType: string
+		lineageTag: 61d73315-0783-47a9-a69f-f9cbcf00ec54
+		summarizeBy: none
+		sourceColumn: promotion_correction
+
+		annotation SummarizationSetBy = Automatic
+
+	column new_job_title
+		dataType: string
+		lineageTag: 17e1f2a5-76ed-4800-ba51-6bc6c12bfcbd
+		summarizeBy: none
+		sourceColumn: new_job_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column new_job_grade
+		dataType: string
+		lineageTag: 675f1fec-c991-4854-a152-e8b7901e74b4
+		summarizeBy: none
+		sourceColumn: new_job_grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column requested_base_increase_pct
+		dataType: double
+		lineageTag: 1663a1e7-1a28-4f91-8c24-132f16c25979
+		summarizeBy: sum
+		sourceColumn: requested_base_increase_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proposed_annual_base
+		dataType: double
+		lineageTag: bee189c5-9617-414d-bacf-e08f35e7d5b3
+		summarizeBy: sum
+		sourceColumn: proposed_annual_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proposed_mkt_base_pct
+		dataType: double
+		lineageTag: 04f3b010-0038-4d7a-8d58-586bbf759728
+		summarizeBy: sum
+		sourceColumn: proposed_mkt_base_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column target_otv
+		dataType: double
+		lineageTag: 87edbb2f-6ae8-44fc-a559-e72d1d4de3b0
+		summarizeBy: sum
+		sourceColumn: target_otv
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proposed_otv_amount
+		dataType: double
+		lineageTag: 8491d941-f19a-420e-a550-d9408954927c
+		summarizeBy: sum
+		sourceColumn: proposed_otv_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proposed_ttc
+		dataType: double
+		lineageTag: 0bf3eafb-f71a-4e3c-b7d4-55248e471f38
+		summarizeBy: sum
+		sourceColumn: proposed_ttc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proposed_market_pctofttc
+		dataType: double
+		lineageTag: ed2468e4-efd6-40dc-8224-61f875fcd104
+		summarizeBy: sum
+		sourceColumn: proposed_market_pctofttc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column bonus_pct
+		dataType: double
+		lineageTag: e49a418c-9fd7-40e1-847a-1db27a66acc6
+		summarizeBy: sum
+		sourceColumn: bonus_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column comment
+		dataType: string
+		lineageTag: fee97e3a-e5b7-4086-bba4-e2b1f5603559
+		summarizeBy: none
+		sourceColumn: comment
+
+		annotation SummarizationSetBy = Automatic
+
+	partition axway_acr_data = m
+		mode: import
+		source =
+				let
+				    Source = Value.NativeQuery(PostgreSQL.Database(host_axway_qa, "pncdb", [CreateNavigationProperties=false]), "SELECT#(lf)    c.employee_name,#(lf)    c.employee_id,#(lf)    c.country,#(lf)    c.hire_date,#(lf)    c.job_title,#(lf)    c.job_grade,#(lf)    c.direct_manager,#(lf)    c.direct_manager_email,#(lf)    ef.compensation_manager,#(lf)    ef.compensation_manager_email,#(lf)    ef.general_manager,#(lf)    ef.general_manager_email,#(lf)    ef.executive,#(lf)    ef.executive_email,#(lf)    ef.ft_pct,#(lf)    c.currency,#(lf)    c.current_annual_base,#(lf)    c.current_market_pct_base,#(lf)    c.variable_type,#(lf)    c.current_annual_otv_amount,#(lf)    c.current_otv_pctofbase,#(lf)    c.current_ttc,#(lf)    c.current_market_pctofttc,#(lf)    tr.performance_rating,#(lf)    c.budget_guidelines,#(lf)    acr.promotion_correction,#(lf)    acr.new_job_title,#(lf)    acr.new_job_grade,#(lf)    c.requested_base_increase_pct,#(lf)    c.proposed_annual_base,#(lf)    c.proposed_mkt_base_pct,#(lf)    c.target_otv,#(lf)    c.proposed_otv_amount,#(lf)    c.proposed_ttc,#(lf)    c.proposed_market_pctofttc,#(lf)    acr.bonus_pct,#(lf)    acr.comment#(lf)FROM pncdb.eoy.calculations as c#(lf)LEFT JOIN eoy.bonus_calculations as b on c.employee_id = b.employee_id#(lf)LEFT JOIN eoy.employee_file ef ON c.employee_id = ef.employee_id#(lf)LEFT JOIN eoy.employee_acr as acr on acr.employee_id = c.employee_id#(lf)LEFT JOIN eoy.talent_review_cy as tr on tr.emp_number = c.employee_id#(lf)", null, [EnableFolding=true])
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,10 @@
+relationship e6dff4be-a23a-4f87-9ae9-c66deb59fe9f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: axway_acr_data.hire_date
+	toColumn: LocalDateTable_800a5af8-f679-424e-ab7c-a745963969c4.Date
+
+relationship 988d026f-66f3-4555-8897-e3653a3f3f7c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: sbs_acr_data.snapshot_date
+	toColumn: LocalDateTable_e6d50880-4bba-4c3f-aecc-8d5f986d9aac.Date
+

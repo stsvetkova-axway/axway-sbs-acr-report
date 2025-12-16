@@ -6,9 +6,21 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
+queryGroup Hosts
+
+	annotation PBI_QueryGroupOrder = 0
+
 annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["host_axway_prod","host_axway_qa","host_sbs_prod","host_sbs_qa","axway_acr_data","sbs_acr_data"]
+
+ref table axway_acr_data
+ref table DateTableTemplate_a1c5ce5f-e69f-4e60-88ba-8e57748d61c3
+ref table LocalDateTable_800a5af8-f679-424e-ab7c-a745963969c4
+ref table sbs_acr_data
+ref table LocalDateTable_e6d50880-4bba-4c3f-aecc-8d5f986d9aac
 
 ref cultureInfo en-US
 

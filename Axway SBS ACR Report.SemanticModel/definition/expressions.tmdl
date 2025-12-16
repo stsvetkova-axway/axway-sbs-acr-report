@@ -1,0 +1,28 @@
+expression host_axway_prod = "10.128.128.146:5432" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: bc457e48-03ed-4bd6-83cb-693622104870
+	queryGroup: Hosts
+
+	annotation PBI_ResultType = Text
+
+expression host_axway_qa = "10.128.128.78:5432" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 1a5081f3-e224-48a7-b3f3-b3ca0fe43137
+	queryGroup: Hosts
+
+	annotation PBI_ResultType = Text
+
+expression host_sbs_prod = "35mq6mhgpbxuhgzhwzexhy2ppu-xn5t67m4hq5ejpqaq3upfhyogi.datawarehouse.fabric.microsoft.com" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 617d4a32-4547-4656-a5ae-ef7f333a8d51
+	queryGroup: Hosts
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression host_sbs_qa = "35mq6mhgpbxuhgzhwzexhy2ppu-qlzdwupkmqhefi3s7w7e2lzh7a.datawarehouse.fabric.microsoft.com" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 862dfd87-67fc-4f94-90bb-9f4a0b38cc61
+	queryGroup: Hosts
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

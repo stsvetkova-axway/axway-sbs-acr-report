@@ -1,0 +1,279 @@
+table sbs_acr_data
+	lineageTag: 85ebd196-f780-4adb-9b91-5e6a1125a3d0
+
+	column employee_name
+		dataType: string
+		lineageTag: c5724a77-078a-4bb2-8579-28c58fa062d0
+		summarizeBy: none
+		sourceColumn: employee_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_name
+		dataType: string
+		lineageTag: cd7eb985-2fe2-4aba-9f02-5fa5339c7d97
+		summarizeBy: none
+		sourceColumn: last_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_name
+		dataType: string
+		lineageTag: 4b7853ec-16cf-4a8f-817c-665ef75c6788
+		summarizeBy: none
+		sourceColumn: first_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_id
+		dataType: string
+		lineageTag: 09f91926-d723-4e76-a648-24fef36a4c82
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_number
+		dataType: string
+		lineageTag: 34f5c763-4193-4270-afed-49d21770b148
+		summarizeBy: none
+		sourceColumn: employee_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column gender
+		dataType: string
+		lineageTag: 32e329b4-ec2d-4116-8b55-2e46124a7861
+		summarizeBy: none
+		sourceColumn: gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column age
+		dataType: int64
+		formatString: 0
+		lineageTag: a5d6818c-937c-47f8-bf37-f7a8641aedcb
+		summarizeBy: sum
+		sourceColumn: age
+
+		annotation SummarizationSetBy = Automatic
+
+	column bu
+		dataType: string
+		lineageTag: 7eedfb84-da5f-4b5e-990d-2a19d7df636a
+		summarizeBy: none
+		sourceColumn: bu
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_center
+		dataType: string
+		lineageTag: def63064-dae9-4fba-b8fd-673c42f18c3e
+		summarizeBy: none
+		sourceColumn: cost_center
+
+		annotation SummarizationSetBy = Automatic
+
+	column site
+		dataType: string
+		lineageTag: 3bd85489-f362-4ceb-b28a-0d0273c0a325
+		summarizeBy: none
+		sourceColumn: site
+
+		annotation SummarizationSetBy = Automatic
+
+	column high_potential
+		dataType: string
+		lineageTag: 91c371ed-3eec-40d7-849d-54e88d96b27b
+		summarizeBy: none
+		sourceColumn: high_potential
+
+		annotation SummarizationSetBy = Automatic
+
+	column key_potential
+		dataType: string
+		lineageTag: 9108f8c8-c02b-47be-8f84-ce9337129f52
+		summarizeBy: none
+		sourceColumn: key_potential
+
+		annotation SummarizationSetBy = Automatic
+
+	column performance
+		dataType: string
+		lineageTag: aaf627e1-4520-4fb9-ae07-6ddcc785e002
+		summarizeBy: none
+		sourceColumn: performance
+
+		annotation SummarizationSetBy = Automatic
+
+	column salary_periods
+		dataType: double
+		lineageTag: 4eb797fa-456d-4483-bb16-49b979322734
+		summarizeBy: sum
+		sourceColumn: salary_periods
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column current_base_monthly
+		dataType: double
+		lineageTag: a42800fc-28e3-4b9d-a365-86a27352b52b
+		summarizeBy: sum
+		sourceColumn: current_base_monthly
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column current_annual_base
+		dataType: double
+		lineageTag: 48e3e519-c27a-475b-a6dc-3efcb2e5c81c
+		summarizeBy: sum
+		sourceColumn: current_annual_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column increase_amount
+		dataType: double
+		lineageTag: a56dc578-3ad4-4ee4-8d40-7ffdeff8108f
+		summarizeBy: sum
+		sourceColumn: increase_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column requested_base_incre_pct
+		dataType: double
+		lineageTag: 0f467a7b-d0f1-4a88-b4dd-620c7eff6ae7
+		summarizeBy: sum
+		sourceColumn: requested_base_incre_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column top
+		dataType: string
+		lineageTag: 8a56e08c-9614-44f6-8c35-f1c833001089
+		summarizeBy: none
+		sourceColumn: top
+
+		annotation SummarizationSetBy = Automatic
+
+	column proposed_base
+		dataType: double
+		lineageTag: 83ee6f9f-9b4d-4571-8699-87be7cd2ffc5
+		summarizeBy: sum
+		sourceColumn: proposed_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proposed_annual_base
+		dataType: double
+		lineageTag: 8e9d5e8e-9826-4b6d-b501-bb22f2a479bd
+		summarizeBy: sum
+		sourceColumn: proposed_annual_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column currency
+		dataType: string
+		lineageTag: 3a60368c-b8c9-4968-a484-306980e0b029
+		summarizeBy: none
+		sourceColumn: currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column job_grade
+		dataType: string
+		lineageTag: 9384306f-e27b-4f18-b3f3-ce921cf5531b
+		summarizeBy: none
+		sourceColumn: job_grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column new_job_grade
+		dataType: string
+		lineageTag: 9065d112-3bc5-421e-9497-1adfc5003c72
+		summarizeBy: none
+		sourceColumn: new_job_grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column direction
+		dataType: string
+		lineageTag: eef5438a-d86a-496c-94df-f31615fcee19
+		summarizeBy: none
+		sourceColumn: direction
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 30844bbb-0d71-40f7-be7c-7d4fb6d43ca9
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		variation Variation
+			isDefault
+			relationship: 988d026f-66f3-4555-8897-e3653a3f3f7c
+			defaultHierarchy: LocalDateTable_e6d50880-4bba-4c3f-aecc-8d5f986d9aac.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column bu_group
+		dataType: string
+		lineageTag: bba27a85-a3e2-4229-abd1-0a1d0cfa03fd
+		summarizeBy: none
+		sourceColumn: bu_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column manager
+		dataType: string
+		lineageTag: 5e4be50b-dae7-4494-a55c-0a80a34e63cf
+		summarizeBy: none
+		sourceColumn: manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column email
+		dataType: string
+		lineageTag: 58ae0a88-193c-4f62-b7b6-37befc5fefb2
+		summarizeBy: none
+		sourceColumn: email
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: 36150c72-f057-48e4-a6ae-433b865de1f4
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	partition sbs_acr_data = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(host_sbs_qa, "sbs_acr_data"),
+				    dbo_view_sbs_acr_data = Source{[Schema="dbo",Item="view_sbs_acr_data"]}[Data]
+				in
+				    dbo_view_sbs_acr_data
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
