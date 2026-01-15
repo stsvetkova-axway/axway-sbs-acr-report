@@ -1,0 +1,7 @@
+role 'C&B 74Sw'
+	modelPermission: read
+
+	tablePermission acr_data = true
+
+	annotation PBI_Id = 11cf25a46af545ffab81a43f86ae19ba
+

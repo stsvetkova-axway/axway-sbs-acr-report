@@ -1,9 +1,9 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
-  "name": "bc24511b473d465d86ca",
-  "displayName": "Overview",
+  "name": "59f7caab98ed58e35330",
+  "displayName": "Duplicate of Performance rating",
   "displayOption": "FitToPage",
-  "height": 720,
+  "height": 1150,
   "width": 1280,
   "objects": {
     "background": [
@@ -24,5 +24,6 @@
         }
       }
     ]
-  }
+  },
+  "visibility": "HiddenInViewMode"
 }

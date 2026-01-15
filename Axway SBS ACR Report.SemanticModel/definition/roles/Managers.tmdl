@@ -1,0 +1,5 @@
+role Managers
+	modelPermission: read
+
+	annotation PBI_Id = 91480b5325484ebdb2a34bf46fc087d2
+

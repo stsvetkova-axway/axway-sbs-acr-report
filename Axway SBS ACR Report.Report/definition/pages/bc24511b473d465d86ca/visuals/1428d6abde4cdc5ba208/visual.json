@@ -1,0 +1,1519 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "1428d6abde4cdc5ba208",
+  "position": {
+    "x": 14.251290877796901,
+    "y": 143.13253012048193,
+    "z": 0,
+    "height": 565.09466437177275,
+    "width": 1251.0154905335628,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "employee_name"
+                }
+              },
+              "queryRef": "acr_data.employee_name",
+              "nativeQueryRef": "Employee name",
+              "displayName": "Employee name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "employee_number"
+                }
+              },
+              "queryRef": "acr_data.employee_number",
+              "nativeQueryRef": "Employee ID",
+              "displayName": "Employee ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "country"
+                }
+              },
+              "queryRef": "acr_data.country",
+              "nativeQueryRef": "Country",
+              "displayName": "Country"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "hire_date"
+                }
+              },
+              "queryRef": "acr_data.hire_date",
+              "nativeQueryRef": "Hire date",
+              "displayName": "Hire date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "job_title"
+                }
+              },
+              "queryRef": "acr_data.job_title",
+              "nativeQueryRef": "Job title/ job stream",
+              "displayName": "Job title/ job stream"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "job_grade"
+                }
+              },
+              "queryRef": "acr_data.job_grade",
+              "nativeQueryRef": "Job grade / level",
+              "displayName": "Job grade / level"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "compensation_manager"
+                }
+              },
+              "queryRef": "acr_data.compensation_manager",
+              "nativeQueryRef": "Compensation manager / Head of",
+              "displayName": "Compensation manager / Head of"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "general_manager"
+                }
+              },
+              "queryRef": "acr_data.general_manager",
+              "nativeQueryRef": "GM",
+              "displayName": "GM"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "executive"
+                }
+              },
+              "queryRef": "acr_data.executive",
+              "nativeQueryRef": "74SW Excom Member",
+              "displayName": "74SW Excom Member"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "currency"
+                }
+              },
+              "queryRef": "acr_data.currency",
+              "nativeQueryRef": "Currency",
+              "displayName": "Currency"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "current_annual_base_local"
+                }
+              },
+              "queryRef": "_Measures.current_annual_base_local",
+              "nativeQueryRef": "Current annual base",
+              "displayName": "Current annual base"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "current_annual_base_eur"
+                }
+              },
+              "queryRef": "Sum(acr_data.current_annual_base_eur)",
+              "nativeQueryRef": "current_annual_base_eur",
+              "displayName": "Current annual base EUR"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "current_market_pct_base"
+                }
+              },
+              "queryRef": "Sum(acr_data.current_market_pct_base)",
+              "nativeQueryRef": "Current market % base",
+              "displayName": "Current market % base"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "current_annual_otv_amount_local"
+                }
+              },
+              "queryRef": "_Measures.current_annual_otv_amount_local",
+              "nativeQueryRef": "Current annual OTV amount",
+              "displayName": "Current annual OTV amount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "current_annual_otv_amount_eur"
+                }
+              },
+              "queryRef": "Sum(acr_data.current_annual_otv_amount_eur)",
+              "nativeQueryRef": "current_annual_otv_amount_eur",
+              "displayName": "Current annual OTV amount EUR"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "current_otv_pct"
+                }
+              },
+              "queryRef": "Sum(acr_data.current_otv_pct)",
+              "nativeQueryRef": "Current OTV % of base",
+              "displayName": "Current OTV % of base"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "current_ttc_local"
+                }
+              },
+              "queryRef": "_Measures.current_ttc_local",
+              "nativeQueryRef": "Current TTC",
+              "displayName": "Current TTC"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "current_ttc_eur"
+                }
+              },
+              "queryRef": "Sum(acr_data.current_ttc_eur)",
+              "nativeQueryRef": "current_ttc_eur",
+              "displayName": "Current TTC EUR"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "current_market_pctofttc"
+                }
+              },
+              "queryRef": "Sum(acr_data.current_market_pctofttc)",
+              "nativeQueryRef": "Current market % TTC",
+              "displayName": "Current market % TTC"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "performance_rating"
+                }
+              },
+              "queryRef": "acr_data.performance_rating",
+              "nativeQueryRef": "Performance rating",
+              "displayName": "Performance rating"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "merit_guidelines"
+                    }
+                  },
+                  "Property": "guidelines"
+                }
+              },
+              "queryRef": "merit_guidelines.guidelines",
+              "nativeQueryRef": "Merit budget guidelines",
+              "displayName": "Merit budget guidelines"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "promotion_correction"
+                }
+              },
+              "queryRef": "acr_data.promotion_correction",
+              "nativeQueryRef": "Promotion",
+              "displayName": "Promotion"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "new_job_title"
+                }
+              },
+              "queryRef": "acr_data.new_job_title",
+              "nativeQueryRef": "New job title / job stream",
+              "displayName": "New job title / job stream"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "new_job_grade"
+                }
+              },
+              "queryRef": "acr_data.new_job_grade",
+              "nativeQueryRef": "New job grade / level",
+              "displayName": "New job grade / level"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "requested_base_increase_pct"
+                }
+              },
+              "queryRef": "Sum(acr_data.requested_base_increase_pct)",
+              "nativeQueryRef": "Proposed base increase %",
+              "displayName": "Proposed base increase %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "proposed_annual_base_local"
+                }
+              },
+              "queryRef": "_Measures.proposed_annual_base_local",
+              "nativeQueryRef": "Proposed annual base",
+              "displayName": "Proposed annual base"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "proposed_annual_base_eur"
+                }
+              },
+              "queryRef": "Sum(acr_data.proposed_annual_base_eur)",
+              "nativeQueryRef": "proposed_annual_base_eur",
+              "displayName": "Proposed annual base EUR"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "proposed_mkt_base_pct"
+                }
+              },
+              "queryRef": "Sum(acr_data.proposed_mkt_base_pct)",
+              "nativeQueryRef": "Proposed market % base",
+              "displayName": "Proposed market % base"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "target_otv"
+                }
+              },
+              "queryRef": "Sum(acr_data.target_otv)",
+              "nativeQueryRef": "Proposed target OTV",
+              "displayName": "Proposed target OTV"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "proposed_annual_otv_amount_local"
+                }
+              },
+              "queryRef": "_Measures.proposed_annual_otv_amount_local",
+              "nativeQueryRef": "Proposed OTV amount",
+              "displayName": "Proposed OTV amount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "proposed_otv_amount_eur"
+                }
+              },
+              "queryRef": "Sum(acr_data.proposed_otv_amount_eur)",
+              "nativeQueryRef": "proposed_otv_amount_eur",
+              "displayName": "Proposed OTV amount EUR"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "proposed_ttc_local"
+                }
+              },
+              "queryRef": "_Measures.proposed_ttc_local",
+              "nativeQueryRef": "Proposed TTC",
+              "displayName": "Proposed TTC"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "proposed_ttc_eur"
+                }
+              },
+              "queryRef": "Sum(acr_data.proposed_ttc_eur)",
+              "nativeQueryRef": "proposed_ttc_eur",
+              "displayName": "Proposed TTC EUR"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "proposed_market_pctofttc"
+                }
+              },
+              "queryRef": "Sum(acr_data.proposed_market_pctofttc)",
+              "nativeQueryRef": "Proposed market % TTC",
+              "displayName": "Proposed market % TTC"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "spent_on_ttc_local"
+                }
+              },
+              "queryRef": "_Measures.spent_on_ttc_local",
+              "nativeQueryRef": "Total TTC spent",
+              "displayName": "Total TTC spent"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "acr_data"
+                        }
+                      },
+                      "Property": "spent_on_ttc_eur"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(acr_data.spent_on_ttc_eur)",
+              "nativeQueryRef": "Total TTC spent EUR",
+              "displayName": "Total TTC spent EUR"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "bonus_pct_mbo"
+                }
+              },
+              "queryRef": "Sum(acr_data.bonus_pct_mbo)",
+              "nativeQueryRef": "Bonus - MBO proposal",
+              "displayName": "Bonus - MBO proposal"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "gender"
+                }
+              },
+              "queryRef": "acr_data.gender",
+              "nativeQueryRef": "Gender",
+              "displayName": "Gender"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "comment"
+                }
+              },
+              "queryRef": "acr_data.comment",
+              "nativeQueryRef": "Comments",
+              "displayName": "Comments"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "acr_data"
+                        }
+                      },
+                      "Property": "budget_on_base_eur"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(acr_data.budget_on_base_eur)",
+              "nativeQueryRef": "Budget on annual base EUR",
+              "displayName": "Budget on annual base EUR"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "acr_data"
+                        }
+                      },
+                      "Property": "total_ttc_budget_eur"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(acr_data.total_ttc_budget_eur)",
+              "nativeQueryRef": "Budget on TTC EUR",
+              "displayName": "Budget on TTC EUR"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "gridHorizontalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "0.5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "233.29084732184333D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.comment"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "122.154896075312D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.current_annual_base_eur)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "103.66952031958789D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.current_market_pct_base)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "120.37521405801303D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.current_annual_otv_amount)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "132.26507588335986D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.current_annual_otv_amount_eur)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "120.95180368909278D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.proposed_otv_amount_eur)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "112.16079556621202D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.current_ttc_local"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "183.1429353870298D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.new_job_title"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "123.26801393174505D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.proposed_ttc)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "116.86915246923738D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.proposed_ttc_local"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "159.11276422992344D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.spent_on_ttc_local"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "cdb0ea3a89adb67250c9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "employee_name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0fee8069b3c801205ed5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "employee_number"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c4b95f8fa655a1d8800c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "country"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "78e7bbbbb35cc13eb0c0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "hire_date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "83a043ff6d1b7a26968e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "job_title"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "2dd474780bd0246103ac",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "job_grade"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5d2eed5682a8689ba290",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "compensation_manager"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "62e185fa14b28e53dbe0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "general_manager"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8385db48593c0224c000",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "executive"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5a1fa4066c27dcbba638",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "currency"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a0cf81ccd58c2613d4e3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "current_market_pct_base"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "02294b296872dc00aa90",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "current_otv_pct"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "41ea6864a5540e264757",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "current_market_pctofttc"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "85deb9857354c60e1125",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "performance_rating"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "60cc1cb0410b7b379b69",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "merit_guidelines"
+              }
+            },
+            "Property": "guidelines"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "aa0c66f01e08043e1bc9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "promotion_correction"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b172fa8b20e7a072a2e3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "new_job_title"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "02a26638431b3d2b4da4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "new_job_grade"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "90f1939909c0bbbeb67c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "requested_base_increase_pct"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3222f6d3969a527dd000",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "proposed_mkt_base_pct"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "29217c973911dc707ca4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "target_otv"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "63d24a316a50e8ee1194",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "proposed_market_pctofttc"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e2587a8891a4de9019b4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "bonus_pct_mbo"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a676ebf016dd904a27e9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "gender"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b336d023bcd7e48008b2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "comment"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "eb2e551893a9915cde80",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "acr_data"
+                  }
+                },
+                "Property": "budget_on_base_eur"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ee1b7b68675b4d978018",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "acr_data"
+                  }
+                },
+                "Property": "total_ttc_budget_eur"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2ff6f4c4d0d975c62ca0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "current_annual_base_local"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "fed47c5674ddab05a27d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "current_annual_base_eur"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b9c1268ab023b806e0c0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "current_annual_otv_amount_eur"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "45b0c7694e8edce0c30d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "current_ttc_eur"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7f472cbcd82b8c3ccc22",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "proposed_annual_base_eur"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9383d5f81cebea5d059a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "proposed_otv_amount_eur"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9651a1156023309191ea",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "proposed_ttc_eur"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f0d3ef4ed8902020a851",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "current_annual_otv_amount_local"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8a944a3961b60098cd70",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "current_ttc_local"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "84291ce250e7ae0b7063",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "proposed_annual_base_local"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ed89be0b24da0881cc55",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "proposed_annual_otv_amount_local"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7abb407bc6e7e86a4e10",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "proposed_ttc_local"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "bd7db506dd9b2182d253",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "spent_on_ttc_local"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "43a1ee72d3d549535a5c",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "acr_data"
+                  }
+                },
+                "Property": "spent_on_ttc_eur"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

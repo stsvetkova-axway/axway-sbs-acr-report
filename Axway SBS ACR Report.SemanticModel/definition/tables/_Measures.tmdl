@@ -1,0 +1,252 @@
+table _Measures
+	lineageTag: 668c66bc-9a49-4d23-9d69-03cfc25c8e5b
+
+	measure annual_budget_vs_spent_pct =
+			DIVIDE (
+			    SUM('acr_data'[remaining_on_base_eur]),
+			    SUM ( 'acr_data'[budget_on_base_eur] ),
+			    0
+			)
+		formatString: 0.00%;(0.00%);0.00%
+		isHidden
+		lineageTag: a11e9627-7758-4600-a848-9f5a5927d360
+
+		changedProperty = FormatString
+
+		changedProperty = IsHidden
+
+	measure emp_with_increase =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[requested_base_increase_pct] > 0
+			)
+		formatString: #,0
+		isHidden
+		lineageTag: c983d0c2-a52a-4bef-a36e-73be943ba18e
+
+		changedProperty = IsHidden
+
+	measure pct_of_eligible_with_increase = DIVIDE ( [emp_with_increase], [merit_elig_cnt], 0 )
+		formatString: 0.0%;-0.0%;0.0%
+		isHidden
+		lineageTag: efcf4cc5-b31d-4f75-a091-e5acc1569d43
+
+		changedProperty = IsHidden
+
+	measure merit_elig_cnt =
+			CALCULATE (
+			    COUNTROWS ( 'acr_data' ),
+			    'acr_data'[merit_eligible] = "Yes"
+			)
+		formatString: #,0
+		isHidden
+		lineageTag: 8aca19b3-e3a4-492c-bd73-47d341e303de
+
+		changedProperty = IsHidden
+
+	measure avg_base_increase_pct_eligible =
+			CALCULATE (
+			    AVERAGE ( 'acr_data'[requested_base_increase_pct] ),
+			    'acr_data'[requested_base_increase_pct] > 0
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		isHidden
+		lineageTag: 7a1d6d45-617d-48b6-8803-dd0f85d9c9f9
+
+		changedProperty = IsHidden
+
+	measure avg_base_increase_pct_all = AVERAGE ( 'acr_data'[requested_base_increase_pct] )
+		formatString: 0.0%;-0.0%;0.0%
+		isHidden
+		lineageTag: 1e2339b8-cc5e-4918-a3e6-97394db71c1b
+
+		changedProperty = IsHidden
+
+	measure current_annual_base_local = SELECTEDVALUE('acr_data'[current_annual_base])
+		isHidden
+		lineageTag: bab0445c-7b0e-4bc0-a153-94df8bc7158c
+
+		formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
+
+	measure Meets =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Meets"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: 532d2b1a-fa97-4363-8db3-ec0e82068088
+
+	measure Outstanding =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Outstanding"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: 12c55c85-c258-4274-a31c-5f2d51d58338
+
+	measure Exceeds =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Exceeds"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: b822b928-a097-4c98-9cb2-95c67f2905fb
+
+	measure 'Partial meets' =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Partial meets"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: 2b2f19db-47bc-4d96-8e52-c638ee73fb14
+
+	measure Insufficient =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Insufficient"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: 32e750f7-7bb1-4cd5-bcf3-af19ed57e51b
+
+	measure Other =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Other"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: 42b4e5c0-66a5-44a5-8c01-31ae4d181c29
+
+	measure avg_base_incr_pct_exceeds =
+			CALCULATE (
+			    AVERAGE ( 'acr_data'[requested_base_increase_pct] ),
+			    'acr_data'[merit_eligible] = "Yes",
+			    'acr_data'[performance_bin] = "Exceeds"
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		isHidden
+		displayFolder: Base increase by Performance
+		lineageTag: b11038b0-5d89-4400-b351-e39d909548e4
+
+	measure avg_base_incr_pct_outstanding =
+			CALCULATE (
+			    AVERAGE ( 'acr_data'[requested_base_increase_pct] ),
+			    'acr_data'[merit_eligible] = "Yes",
+			    'acr_data'[performance_bin] = "Outstanding"
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		isHidden
+		displayFolder: Base increase by Performance
+		lineageTag: 2f516dcf-944d-4206-8bad-31dadab47a6e
+
+	measure avg_base_incr_pct_meets =
+			CALCULATE (
+			    AVERAGE ( 'acr_data'[requested_base_increase_pct] ),
+			    'acr_data'[merit_eligible] = "Yes",
+			    'acr_data'[performance_bin] = "Meets"
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		isHidden
+		displayFolder: Base increase by Performance
+		lineageTag: 394269f1-8b1c-4f1f-88a1-de4b9f511a43
+
+	measure avg_base_incr_pct_partial =
+			CALCULATE (
+			    AVERAGE ( 'acr_data'[requested_base_increase_pct] ),
+			    'acr_data'[merit_eligible] = "Yes",
+			    'acr_data'[performance_bin] = "Partial meets"
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		isHidden
+		displayFolder: Base increase by Performance
+		lineageTag: 51e726c3-aae4-4dc4-a5c8-d49544916f5a
+
+	measure avg_base_incr_pct_insufficient =
+			CALCULATE (
+			    AVERAGE ( 'acr_data'[requested_base_increase_pct] ),
+			    'acr_data'[merit_eligible] = "Yes",
+			    'acr_data'[performance_bin] = "Insufficient"
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		isHidden
+		displayFolder: Base increase by Performance
+		lineageTag: 67ff9abc-c10f-4bf2-b5f8-5f30194aac82
+
+	measure avg_base_incr_pct_other =
+			CALCULATE (
+			    AVERAGE ( 'acr_data'[requested_base_increase_pct] ),
+			    'acr_data'[merit_eligible] = "Yes",
+			    'acr_data'[performance_bin] = "Other"
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		isHidden
+		displayFolder: Base increase by Performance
+		lineageTag: 50554b0a-861d-495b-8c4e-880b64724c2b
+
+	measure promotions_cnt =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[promotion_correction] = "promotion"
+			)
+		isHidden
+		lineageTag: 3d7d9968-4260-4982-b946-a352345b3ddf
+
+	measure promotions_pct = DIVIDE ( [promotions_cnt], [merit_elig_cnt], 0 )
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 2f412b2b-e672-41f6-a398-6b1c673f7936
+
+	measure current_annual_otv_amount_local = SELECTEDVALUE('acr_data'[current_annual_otv_amount])
+		isHidden
+		lineageTag: 0aebc929-95e2-49f0-87f8-cce201b1899c
+
+		formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
+
+	measure proposed_annual_base_local = SELECTEDVALUE('acr_data'[proposed_annual_base])
+		isHidden
+		lineageTag: d80892c0-42da-4b80-99b1-35f954a9eb35
+
+		formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
+
+	measure proposed_annual_otv_amount_local = SELECTEDVALUE('acr_data'[proposed_otv_amount])
+		isHidden
+		lineageTag: 1b6c9a03-b588-42d3-9d31-42a2ed31d054
+
+		formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
+
+	measure current_ttc_local = SELECTEDVALUE('acr_data'[current_ttc])
+		isHidden
+		lineageTag: f99c25f0-8d92-4011-ac31-df70007bfd2b
+
+		formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
+
+	measure proposed_ttc_local = SELECTEDVALUE('acr_data'[proposed_ttc])
+		isHidden
+		lineageTag: 9d269720-9ce2-42d0-8434-59e6ffb399b3
+
+		formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
+
+	measure spent_on_ttc_local = SELECTEDVALUE('acr_data'[spent_on_ttc])
+		isHidden
+		lineageTag: fc024407-8b05-43f2-a817-d6d3a8d1bc8f
+
+		formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

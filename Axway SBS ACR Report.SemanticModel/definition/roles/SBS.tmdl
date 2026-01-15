@@ -1,0 +1,7 @@
+role SBS
+	modelPermission: read
+
+	tablePermission acr_data = [company] == "SBS"
+
+	annotation PBI_Id = 8431e4926d6146478df2d94d93e4d58d
+

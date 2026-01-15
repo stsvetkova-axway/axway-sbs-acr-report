@@ -1,0 +1,35 @@
+table 'Last Refresh'
+	lineageTag: 48cc50be-0fc0-40ed-bf32-2e79766356dd
+
+	measure 'Last refresh on' = FORMAT(FIRSTDATE ( 'Last Refresh'[Last Refresh] ), "DD-MMM-YYYY hh:mm:ss AM/PM")
+		lineageTag: 460d81cd-ff47-4cc5-9bfb-36223257dcc1
+
+	measure label = "Last refreshed on:"
+		lineageTag: 7885f1b1-2686-4ba7-b0df-492f67fafb18
+
+	column 'Last Refresh'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 49dedb70-569e-4e7a-ada1-7bd2bfacba31
+		summarizeBy: none
+		sourceColumn: Last Refresh
+
+		variation Variation
+			isDefault
+			relationship: 12adff23-22a3-463a-8309-4ae5f4df4a8c
+			defaultHierarchy: LocalDateTable_192cc25a-7bdf-4395-8195-f63ca7bcba4b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Last Refresh' = m
+		mode: import
+		source =
+				let
+				    Source = DateTimeZone.FixedUtcNow()
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = DateTimeZone
+

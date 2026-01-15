@@ -1,0 +1,103 @@
+table merit_guidelines
+	isHidden
+	lineageTag: 70293f6e-7f8d-4fac-8654-30549aed6d5c
+
+	column country
+		dataType: string
+		isHidden
+		lineageTag: a0c0f912-b534-421e-bef3-c999f6ed1fc2
+		summarizeBy: none
+		sourceColumn: country
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column performance
+		dataType: string
+		isHidden
+		lineageTag: d1d13b3c-0ba6-4eda-8e32-c551e679303a
+		summarizeBy: none
+		sourceColumn: performance
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget
+		dataType: double
+		isHidden
+		lineageTag: 37d5e411-92cf-436a-aecd-1561a8fb5836
+		summarizeBy: none
+		sourceColumn: budget
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column min_pct
+		dataType: double
+		isHidden
+		lineageTag: 6960fd8e-91fe-4c7d-8bab-98e9e02cf032
+		summarizeBy: none
+		sourceColumn: min_pct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column max_pct
+		dataType: double
+		isHidden
+		lineageTag: 6a39609f-9c6c-49d1-9732-c499a8e6414b
+		summarizeBy: none
+		sourceColumn: max_pct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column guidelines
+		dataType: string
+		isHidden
+		lineageTag: 2d0969b4-8071-4027-988a-c2421ab204b3
+		summarizeBy: none
+		sourceColumn: guidelines
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column key
+		dataType: string
+		isHidden
+		lineageTag: 33bb4936-eec6-4603-bec0-2331ab3c02a7
+		summarizeBy: none
+		sourceColumn: key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition merit_guidelines = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(host_sbs_qa, "sbs_acr_data"),
+				    dbo_view_sbs_acr_data = Source{[Schema="dbo",Item="merit_guidelines"]}[Data],
+				    #"Added Custom" = Table.AddColumn(dbo_view_sbs_acr_data, "key", each [country] & "-" & [performance])
+				in
+				    #"Added Custom"
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -9,7 +9,98 @@
         "page": "2.3.0"
       },
       "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Metricalist_-_Simply_Modern_Li2101554468897674.json",
+      "reportVersionAtImport": {
+        "visual": "2.4.0",
+        "report": "3.0.0",
+        "page": "2.3.0"
+      },
+      "type": "RegisteredResources"
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ff7e2b8605d30e4ee793",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "company"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "0b02587eb557bd2293e8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "country"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "61136b8c9de9c4dc5e0b",
+        "displayName": "74SW Excom member",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "executive"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "481459588e01a10da97a",
+        "displayName": "Compensation manager / Head of",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "compensation_manager"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "cfac0f4ab0b5bee1c28e",
+        "displayName": "GM",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "general_manager"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ]
   },
   "objects": {
     "section": [
@@ -37,14 +128,29 @@
           "type": "BaseTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Metricalist_-_Simply_Modern_Li2101554468897674.json",
+          "path": "Metricalist_-_Simply_Modern_Li2101554468897674.json",
+          "type": "CustomTheme"
+        }
+      ]
     }
   ],
   "settings": {
     "useStylableVisualContainerHeader": true,
     "exportDataMode": "AllowSummarized",
+    "defaultFilterActionIsDataFilter": true,
     "defaultDrillFilterOtherVisuals": true,
     "allowChangeFilterTypes": true,
     "useEnhancedTooltips": true,
-    "useDefaultAggregateDisplayName": true
+    "useDefaultAggregateDisplayName": true,
+    "queryLimitOption": "None",
+    "customMemoryLimit": "1048576",
+    "customTimeoutLimit": "225"
   }
 }

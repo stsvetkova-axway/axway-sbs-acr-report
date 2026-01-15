@@ -1,0 +1,1139 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "132b5c5f087d16a1a47c",
+  "position": {
+    "x": 10.886402753872632,
+    "y": 144.32872873347355,
+    "z": 1000,
+    "height": 223.66609294320136,
+    "width": 1261.8330464716007,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "executive"
+                }
+              },
+              "queryRef": "acr_data.executive",
+              "nativeQueryRef": "Executive",
+              "displayName": "Executive"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Outstanding"
+                }
+              },
+              "queryRef": "_Measures.Outstanding",
+              "nativeQueryRef": "Outstanding"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Exceeds"
+                }
+              },
+              "queryRef": "_Measures.Exceeds",
+              "nativeQueryRef": "Exceeds"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Meets"
+                }
+              },
+              "queryRef": "_Measures.Meets",
+              "nativeQueryRef": "Meets"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Partial meets"
+                }
+              },
+              "queryRef": "_Measures.Partial meets",
+              "nativeQueryRef": "Partial meets"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Insufficient"
+                }
+              },
+              "queryRef": "_Measures.Insufficient",
+              "nativeQueryRef": "Insufficient"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Other"
+                }
+              },
+              "queryRef": "_Measures.Other",
+              "nativeQueryRef": "Other"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "blank"
+                }
+              },
+              "queryRef": "Sum(acr_data.blank)",
+              "nativeQueryRef": "blank",
+              "displayName": " "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "avg_base_incr_pct_outstanding"
+                }
+              },
+              "queryRef": "_Measures.avg_base_incr_pct_outstanding",
+              "nativeQueryRef": "Outstanding1",
+              "displayName": "Outstanding"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "avg_base_incr_pct_exceeds"
+                }
+              },
+              "queryRef": "_Measures.avg_base_incr_pct_exceeds",
+              "nativeQueryRef": "Exceeds1",
+              "displayName": "Exceeds"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "avg_base_incr_pct_meets"
+                }
+              },
+              "queryRef": "_Measures.avg_base_incr_pct_meets",
+              "nativeQueryRef": "Meets1",
+              "displayName": "Meets"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "avg_base_incr_pct_partial"
+                }
+              },
+              "queryRef": "_Measures.avg_base_incr_pct_partial",
+              "nativeQueryRef": "Partial meets1",
+              "displayName": "Partial meets"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "avg_base_incr_pct_insufficient"
+                }
+              },
+              "queryRef": "_Measures.avg_base_incr_pct_insufficient",
+              "nativeQueryRef": "Insufficient1",
+              "displayName": "Insufficient"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "avg_base_incr_pct_other"
+                }
+              },
+              "queryRef": "_Measures.avg_base_incr_pct_other",
+              "nativeQueryRef": "Other1",
+              "displayName": "Other"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "blank"
+                }
+              },
+              "queryRef": "Sum(acr_data.blank)",
+              "nativeQueryRef": "blank",
+              "displayName": " "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "promotions_cnt"
+                }
+              },
+              "queryRef": "_Measures.promotions_cnt",
+              "nativeQueryRef": "# of promos",
+              "displayName": "# of promos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "promotions_pct"
+                }
+              },
+              "queryRef": "_Measures.promotions_pct",
+              "nativeQueryRef": "% promos",
+              "displayName": "% promos"
+            }
+          ],
+          "showAll": true
+        }
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Verdana'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 5,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Verdana'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "89.61525011186251D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "acr_data"
+                          }
+                        },
+                        "Property": "performance_bin"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Outstanding'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "64.48700640159699D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "acr_data"
+                          }
+                        },
+                        "Property": "performance_bin"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Exceeds'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "54.487006720871165D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "acr_data"
+                          }
+                        },
+                        "Property": "performance_bin"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Meets'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "100.9740058237157D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "acr_data"
+                          }
+                        },
+                        "Property": "performance_bin"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Partial meets'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "89.3500817976597D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "acr_data"
+                          }
+                        },
+                        "Property": "performance_bin"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Insufficient'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "51.23916811091854D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "acr_data"
+                          }
+                        },
+                        "Property": "performance_bin"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Other'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "129D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.executive"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "60D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.avg_base_incr_pct_exceeds"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Outstanding"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "60D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Exceeds"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "46D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Meets"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "91D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Partial meets"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "80D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Insufficient"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "45D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Other"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "27.855411902341274D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.blank)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "92.16693533008883D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.avg_base_incr_pct_outstanding"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "94.79516040493158D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.avg_base_incr_pct_partial"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "76.9087776342958D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.avg_base_incr_pct_other"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "69.0430711382913D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.avg_base_incr_pct_meets"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88.15663551719594D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.avg_base_incr_pct_insufficient"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "90D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.blank)1"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "91.15490424691679D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.promotions_cnt"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "80.26850069465577D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.promotions_pct"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.blank)"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "0.5D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3015ed7a9dc008721649",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "executive"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "eb7606d16dc315047a48",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_exceeds"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "4e24aabe605be5183010",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Outstanding"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5154d9ab78d095650127",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Exceeds"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "730b2193670ca787c8e0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Meets"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e0aadfc84c7405a31647",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Partial meets"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "fc09dd7685a303bc42c3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Insufficient"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3f068eacac57b0a64e4a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Other"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b90b68d280a905809e2d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "blank"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "48e3b3056dcb700b8590",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_outstanding"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7d24a39e0ab7c976b92a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_partial"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e6d7be3e0e0d3971c0a8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_other"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2783dcdf390468007502",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_meets"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "885a63f0667e0000c08e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_insufficient"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e8c57d342064a4975b96",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "promotions_cnt"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ec884aec5acbda173ec9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "promotions_pct"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

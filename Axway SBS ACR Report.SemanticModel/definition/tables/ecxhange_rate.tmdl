@@ -1,0 +1,53 @@
+table ecxhange_rate
+	isHidden
+	lineageTag: 5b904bed-b6f6-45c7-8e84-5abfd43de505
+
+	column currency
+		dataType: string
+		isHidden
+		lineageTag: 854bf813-3d3a-4740-8064-bd5605b8f088
+		summarizeBy: none
+		sourceColumn: currency
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column rate
+		dataType: double
+		isHidden
+		lineageTag: a5636e1f-e2bd-4c21-8c5f-7f2f7547c701
+		summarizeBy: none
+		sourceColumn: rate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column format
+		dataType: string
+		lineageTag: 88192e83-100b-4092-8e0a-d69705110f0a
+		summarizeBy: none
+		sourceColumn: format
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ecxhange_rate = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(host_sbs_qa, "sbs_acr_data"),
+				    dbo_view_sbs_acr_data = Source{[Schema="dbo",Item="exchange_rate"]}[Data],
+				    #"Merged Queries" = Table.NestedJoin(dbo_view_sbs_acr_data, {"currency"}, currencies, {"Currency code"}, "currencies", JoinKind.LeftOuter),
+				    #"Expanded currencies" = Table.ExpandTableColumn(#"Merged Queries", "currencies", {"Format"}, {"format"})
+				in
+				    #"Expanded currencies"
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,11 @@
+createOrReplace
+
+	ref table _Measures
+
+
+
+		measure spent_on_ttc_local = SELECTEDVALUE('acr_data'[spent_on_ttc])
+			isHidden
+			formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
+
+

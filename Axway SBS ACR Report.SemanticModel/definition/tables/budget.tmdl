@@ -1,0 +1,43 @@
+table budget
+	isHidden
+	lineageTag: 6c5f052b-2cb2-43a6-b31d-2e976e4215bc
+
+	column country
+		dataType: string
+		isHidden
+		lineageTag: f00e0d82-5231-4fb5-a869-93ebb8967f4e
+		summarizeBy: none
+		sourceColumn: country
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget
+		dataType: double
+		isHidden
+		lineageTag: edb9ae3a-a9ae-4961-a3ca-a5b5066a930a
+		summarizeBy: none
+		sourceColumn: budget
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition budget = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(host_sbs_qa, "sbs_acr_data"),
+				    dbo_view_sbs_acr_data = Source{[Schema="dbo",Item="budget"]}[Data]
+				in
+				    dbo_view_sbs_acr_data
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

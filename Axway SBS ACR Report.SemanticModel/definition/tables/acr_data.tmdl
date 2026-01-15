@@ -1,0 +1,990 @@
+table acr_data
+	isHidden
+	lineageTag: 7591e0d1-0ae1-4958-bc3b-8f01122e2db6
+
+	column employee_name
+		dataType: string
+		isHidden
+		lineageTag: 3a11d014-3edb-4dcd-9e60-c990b4a6c535
+		summarizeBy: none
+		sourceColumn: employee_name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_id
+		dataType: string
+		isHidden
+		lineageTag: bca269ee-077c-4002-b8e8-6f9cd899fc81
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		isHidden
+		lineageTag: 50dc92e2-e133-4f1e-96cc-b0313dfffce8
+		summarizeBy: none
+		sourceColumn: country
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column hire_date
+		dataType: dateTime
+		isHidden
+		formatString: Short Date
+		lineageTag: 0bdf4d0b-052e-4920-9be2-73d2ddfe5a10
+		summarizeBy: none
+		sourceColumn: hire_date
+
+		variation Variation
+			isDefault
+			relationship: 1e7a535c-c47a-409d-9346-f23ea11c0f1e
+			defaultHierarchy: LocalDateTable_33dd91e1-4ffa-4977-8150-6164fe67a9ea.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column job_title
+		dataType: string
+		isHidden
+		lineageTag: 94271761-0c8f-42c1-917b-c0d5535dbdf0
+		summarizeBy: none
+		sourceColumn: job_title
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column job_grade
+		dataType: string
+		isHidden
+		lineageTag: 9248f73a-2625-4c3d-8826-36c9e142ff87
+		summarizeBy: none
+		sourceColumn: job_grade
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column direct_manager
+		dataType: string
+		isHidden
+		lineageTag: e4171116-7942-4604-a60f-3d4fa51cc18b
+		summarizeBy: none
+		sourceColumn: direct_manager
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column direct_manager_email
+		dataType: string
+		isHidden
+		lineageTag: ac8679bf-92c8-4117-b97a-b1a078a66e16
+		summarizeBy: none
+		sourceColumn: direct_manager_email
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column compensation_manager
+		dataType: string
+		isHidden
+		lineageTag: 17bccbc4-8c0a-41bd-9363-2e06a4347c3d
+		summarizeBy: none
+		sourceColumn: compensation_manager
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column compensation_manager_email
+		dataType: string
+		isHidden
+		lineageTag: 73730133-2855-4986-a5af-88e4d6a7ca48
+		summarizeBy: none
+		sourceColumn: compensation_manager_email
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column general_manager
+		dataType: string
+		isHidden
+		lineageTag: dd19399a-f612-40dc-a94a-1b922aabc9f1
+		summarizeBy: none
+		sourceColumn: general_manager
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column general_manager_email
+		dataType: string
+		isHidden
+		lineageTag: 9d7cbd89-5505-4f03-a442-cc0ad286c39e
+		summarizeBy: none
+		sourceColumn: general_manager_email
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column executive
+		dataType: string
+		isHidden
+		lineageTag: 40c48927-f8ad-42f1-a083-3cd2999b81ed
+		summarizeBy: none
+		sourceColumn: executive
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column executive_email
+		dataType: string
+		isHidden
+		lineageTag: ed5b900c-146c-41a1-9fd3-e2051005524a
+		summarizeBy: none
+		sourceColumn: executive_email
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ft_pct
+		dataType: double
+		isHidden
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 3b3badb1-68f5-47f2-9710-ef9abddfbeaa
+		summarizeBy: sum
+		sourceColumn: ft_pct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column currency
+		dataType: string
+		isHidden
+		lineageTag: b776b813-3e5c-456f-a18a-26910f6b87e7
+		summarizeBy: none
+		sourceColumn: currency
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_annual_base
+		dataType: double
+		isHidden
+		lineageTag: 334e4c2c-2919-4857-9d98-df9c113eb640
+		summarizeBy: sum
+		sourceColumn: current_annual_base
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column current_market_pct_base
+		dataType: double
+		isHidden
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: ca5c9afb-fa3d-4b02-9926-4af8ddd490da
+		summarizeBy: sum
+		sourceColumn: current_market_pct_base
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column variable_type
+		dataType: string
+		isHidden
+		lineageTag: 0d5894a9-183f-41ed-97f1-36bb407bda91
+		summarizeBy: none
+		sourceColumn: variable_type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_annual_otv_amount
+		dataType: double
+		isHidden
+		lineageTag: 65fad995-cdda-42cd-8dc1-d90508bc782b
+		summarizeBy: sum
+		sourceColumn: current_annual_otv_amount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column current_otv_pctofbase
+		dataType: double
+		isHidden
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 13ecf269-f01d-4d2a-9b47-478f096adfe0
+		summarizeBy: sum
+		sourceColumn: current_otv_pctofbase
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_ttc
+		dataType: double
+		isHidden
+		lineageTag: c8600c45-159a-48e7-b69d-24c7f0810c78
+		summarizeBy: sum
+		sourceColumn: current_ttc
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column current_market_pctofttc
+		dataType: double
+		isHidden
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 70c8ad3a-c6e4-46c5-bd75-f6354a5a9486
+		summarizeBy: sum
+		sourceColumn: current_market_pctofttc
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column performance_rating
+		dataType: string
+		isHidden
+		lineageTag: 5ca772a8-285f-489d-bed4-01708464ddc1
+		summarizeBy: none
+		sourceColumn: performance_rating
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column promotion_correction
+		dataType: string
+		isHidden
+		lineageTag: 879f05e6-31e6-47f3-8376-9c795ee8e2a3
+		summarizeBy: none
+		sourceColumn: promotion_correction
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column new_job_title
+		dataType: string
+		isHidden
+		lineageTag: 0e2633ad-ab72-465c-ba19-9cb3af1b8d38
+		summarizeBy: none
+		sourceColumn: new_job_title
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column new_job_grade
+		dataType: string
+		isHidden
+		lineageTag: ad8598af-5218-4850-8a33-962416a42b54
+		summarizeBy: none
+		sourceColumn: new_job_grade
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column requested_base_increase_pct
+		dataType: double
+		isHidden
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: d2b922ee-a565-48cb-ab56-cce2d0e00038
+		summarizeBy: sum
+		sourceColumn: requested_base_increase_pct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column proposed_annual_base
+		dataType: double
+		isHidden
+		lineageTag: fdbf9ba1-aa37-4127-8717-50179e50b072
+		summarizeBy: sum
+		sourceColumn: proposed_annual_base
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proposed_mkt_base_pct
+		dataType: double
+		isHidden
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: f93c3b90-7259-4b5e-a330-df0490782d33
+		summarizeBy: sum
+		sourceColumn: proposed_mkt_base_pct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column target_otv
+		dataType: double
+		isHidden
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: aa770fb3-3f17-4632-b734-6fcfaf696f96
+		summarizeBy: sum
+		sourceColumn: target_otv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column proposed_otv_amount
+		dataType: double
+		isHidden
+		lineageTag: b8dcc5c3-49b4-43a5-9189-e1b014aec079
+		summarizeBy: sum
+		sourceColumn: proposed_otv_amount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proposed_ttc
+		dataType: double
+		isHidden
+		lineageTag: 607f5286-8728-45b6-b665-7b10f245e580
+		summarizeBy: sum
+		sourceColumn: proposed_ttc
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proposed_market_pctofttc
+		dataType: double
+		isHidden
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: dde98381-5a0a-475a-9f3e-b70a6ef16d2c
+		summarizeBy: sum
+		sourceColumn: proposed_market_pctofttc
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column comment
+		dataType: string
+		isHidden
+		lineageTag: 5835f335-743b-4cc7-b3e5-a594829c2223
+		summarizeBy: none
+		sourceColumn: comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column company
+		dataType: string
+		isHidden
+		lineageTag: ed4b89a5-ebdb-4eac-b8dc-e94dd38fd387
+		summarizeBy: none
+		sourceColumn: company
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_name
+		dataType: string
+		isHidden
+		lineageTag: 8c0347e5-aada-4067-887d-ead4f9b7e489
+		summarizeBy: none
+		sourceColumn: last_name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_name
+		dataType: string
+		isHidden
+		lineageTag: 6e0643fe-7926-4f19-a42b-ee1dc0d7de24
+		summarizeBy: none
+		sourceColumn: first_name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_number
+		dataType: string
+		isHidden
+		lineageTag: e0f4ded7-c049-44a7-846a-f0151c87cb66
+		summarizeBy: none
+		sourceColumn: employee_number
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_otv_pct_of_base
+		dataType: double
+		isHidden
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: c6336de4-23f5-4990-a379-dbbd01c97f5d
+		summarizeBy: sum
+		sourceColumn: current_otv_pct_of_base
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column bonus_pct_mbo
+		dataType: double
+		isHidden
+		formatString: 0%;-0%;0%
+		lineageTag: 7a952fc9-dd9c-49f1-a2ae-9fe855c339a4
+		summarizeBy: sum
+		sourceColumn: bonus_pct_mbo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column gender
+		dataType: string
+		isHidden
+		lineageTag: 051987b8-7311-40b9-af97-5db0a379faca
+		summarizeBy: none
+		sourceColumn: gender
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column age
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d2181256-c1d0-49dc-99f4-9936ac618110
+		summarizeBy: sum
+		sourceColumn: age
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column bu
+		dataType: string
+		isHidden
+		lineageTag: 1d17b77c-76f0-49e3-b8c7-51603a53a41b
+		summarizeBy: none
+		sourceColumn: bu
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_center
+		dataType: string
+		isHidden
+		lineageTag: 90162e03-9ae1-4e2c-b92e-8704369a38bc
+		summarizeBy: none
+		sourceColumn: cost_center
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column site
+		dataType: string
+		isHidden
+		lineageTag: 825fb7d1-2df6-42e3-a5a0-0f451487501f
+		summarizeBy: none
+		sourceColumn: site
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column high_potential
+		dataType: string
+		isHidden
+		lineageTag: f7172d9b-5b0c-400c-b058-07eb6fc143eb
+		summarizeBy: none
+		sourceColumn: high_potential
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column key_potential
+		dataType: string
+		isHidden
+		lineageTag: 9d3b0f7b-b292-4261-9377-424b16898087
+		summarizeBy: none
+		sourceColumn: key_potential
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column salary_periods
+		dataType: double
+		isHidden
+		lineageTag: 2350325d-7429-45bf-b620-d9c9d1216c9a
+		summarizeBy: sum
+		sourceColumn: salary_periods
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column increase_amount
+		dataType: double
+		isHidden
+		lineageTag: 853e5a48-7c41-471d-b7e3-ceb53d2a9a65
+		summarizeBy: sum
+		sourceColumn: increase_amount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column top
+		dataType: string
+		isHidden
+		lineageTag: d5987bb8-ea2b-4553-b15c-3e6dade009c2
+		summarizeBy: none
+		sourceColumn: top
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column proposed_base
+		dataType: double
+		isHidden
+		lineageTag: 2ea6d85a-b023-46fc-962f-6f2678d305e3
+		summarizeBy: sum
+		sourceColumn: proposed_base
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column direction
+		dataType: string
+		isHidden
+		lineageTag: 9f2714a0-32bf-4c74-a45d-c03810b90d7a
+		summarizeBy: none
+		sourceColumn: direction
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		isHidden
+		formatString: Short Date
+		lineageTag: d3b7d479-a7b7-46dc-a165-e0d73d2fb72f
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		variation Variation
+			isDefault
+			relationship: 99ef545e-8ada-45e6-ae23-e747265f7896
+			defaultHierarchy: LocalDateTable_fa1d1433-818e-4e7c-a158-1d157947ff0c.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column bu_group
+		dataType: string
+		isHidden
+		lineageTag: e6c15b90-7e78-4176-829a-aa53009a5d9e
+		summarizeBy: none
+		sourceColumn: bu_group
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column bu_manager
+		dataType: string
+		isHidden
+		lineageTag: dd50333b-a38b-4fd8-a294-5c0877cb54b6
+		summarizeBy: none
+		sourceColumn: bu_manager
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column bu_manager_email
+		dataType: string
+		isHidden
+		lineageTag: 5fc1a148-fe47-4cf0-822d-13ee72a8aef1
+		summarizeBy: none
+		sourceColumn: bu_manager_email
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_otv_pct
+		dataType: double
+		isHidden
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 4f513682-56fb-4b35-91b8-cf2f17865150
+		summarizeBy: sum
+		sourceColumn: current_otv_pct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column performance_adjusted
+		dataType: string
+		isHidden
+		lineageTag: 8b8696c0-c461-4983-b4ce-e6a53a4ce959
+		summarizeBy: none
+		sourceColumn: performance_adjusted
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column key
+		dataType: string
+		isHidden
+		lineageTag: 11184e89-e3b6-4607-8842-1d06b0aedc10
+		summarizeBy: none
+		sourceColumn: key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget_on_base
+		dataType: double
+		isHidden
+		lineageTag: 6e5f78ff-a4d3-4ba1-8b50-23dc0645a5b7
+		summarizeBy: sum
+		sourceColumn: budget_on_base
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column budget_on_base_eur
+		dataType: double
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: e2b90ac8-7e03-4c5b-a626-9e3bff012a2e
+		summarizeBy: sum
+		sourceColumn: budget_on_base_eur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_ttc_budget
+		dataType: double
+		isHidden
+		lineageTag: 4a041b8e-bab6-4f07-b5d4-109d3ccf9a7d
+		summarizeBy: sum
+		sourceColumn: total_ttc_budget
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_ttc_budget_eur
+		dataType: double
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: a61ce29b-65f4-4cb8-b8dc-289a1549151e
+		summarizeBy: sum
+		sourceColumn: total_ttc_budget_eur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_annual_base_eur = ROUND(DIVIDE(acr_data[current_annual_base], RELATED(ecxhange_rate[rate]), 0), 2)
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: 0f0da61a-6b28-45fc-91ca-170ad4345884
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_annual_otv_amount_eur = ROUND(DIVIDE(acr_data[current_annual_otv_amount], RELATED(ecxhange_rate[rate]), 0), 2)
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: 9463e52a-86fc-4dd0-bc7c-08d6caf26b68
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_ttc_eur = ROUND(DIVIDE(acr_data[current_ttc], RELATED(ecxhange_rate[rate]), 0), 2)
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: af822b44-3216-4ae3-8af0-61990d158cd6
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column proposed_annual_base_eur = ROUND(DIVIDE(acr_data[proposed_annual_base], RELATED(ecxhange_rate[rate]), 0), 2)
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: 37bdef0d-cab5-4716-ad81-48b701a80b35
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column proposed_otv_amount_eur = ROUND(DIVIDE(acr_data[proposed_otv_amount], RELATED(ecxhange_rate[rate]), 0), 2)
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: 354e9033-b483-4ad4-8973-b434e864f2aa
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column proposed_ttc_eur = ROUND(DIVIDE(acr_data[proposed_ttc], RELATED(ecxhange_rate[rate]), 0), 2)
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: 587d47c7-dda7-4607-8b32-6ddcaaf52f59
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column increase_amount_eur = ROUND(DIVIDE(acr_data[increase_amount], RELATED(ecxhange_rate[rate]), 0), 2)
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: 85d30e7e-ed6f-4d31-9ed3-460af3f75764
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column proposed_base_eur = ROUND(DIVIDE(acr_data[proposed_base], RELATED(ecxhange_rate[rate]), 0), 2)
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: cedfc9c4-842c-4fb1-88f7-0e66e71340a1
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column performance_bin =
+			SWITCH(COALESCE(acr_data[performance_adjusted], acr_data[performance_rating]),
+			"Insufficient", "Insufficient",
+			"Partially meets requirements", "Partial meets",
+			"Meets requirements", "Meets",
+			"Exceeds requirements", "Exceeds",
+			"Outstanding", "Outstanding",
+			"Other"
+			)
+		isHidden
+		lineageTag: d6124da7-f2d9-4244-b2fa-fea0a3b79bd6
+		summarizeBy: none
+		sortByColumn: performance_bin_order
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column spent_on_base
+		dataType: double
+		isHidden
+		lineageTag: a97b0b17-f6bb-409b-810e-18a42111c201
+		summarizeBy: sum
+		sourceColumn: spent_on_base
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column spent_on_base_eur
+		dataType: double
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: e6e35f8b-8ed9-4a9f-8912-5f296c609690
+		summarizeBy: sum
+		sourceColumn: spent_on_base_eur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column remaining_on_base_eur
+		dataType: double
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: 8197c5ea-8487-4e36-be6e-bcb91b7f11b4
+		summarizeBy: sum
+		sourceColumn: remaining_on_base_eur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column spent_on_ttc
+		dataType: double
+		isHidden
+		lineageTag: f36f0851-9c62-45ee-be6b-d8655205e5a2
+		summarizeBy: sum
+		sourceColumn: spent_on_ttc
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column spent_on_ttc_eur
+		dataType: double
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: c2c39c75-bc4c-4ab1-9f7e-0d1349e21e49
+		summarizeBy: sum
+		sourceColumn: spent_on_ttc_eur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column remaining_ttc_eur
+		dataType: double
+		isHidden
+		formatString: "€"\ #,0;-"€"\ #,0;"€"\ #,0
+		lineageTag: 62825f85-254c-4009-ab99-2ba09af8253d
+		summarizeBy: sum
+		sourceColumn: remaining_ttc_eur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column performance_bin_order =
+			SWITCH(acr_data[performance_adjusted],
+			"Insufficient", 5,
+			"Partially meets requirements", 4,
+			"Meets requirements", 3,
+			"Exceeds requirements", 2,
+			"Outstanding", 1,
+			9999
+			)
+		isHidden
+		formatString: 0
+		lineageTag: d40dbd52-3246-4996-86e8-d475a8848cdf
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column merit_eligible
+		dataType: string
+		isHidden
+		lineageTag: 69ea2d03-6906-44ab-938a-daa4e6b30193
+		summarizeBy: none
+		sourceColumn: merit_eligible
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column blank = BLANK()
+		formatString: 0
+		lineageTag: 2dcf4c23-b67e-45a0-9fb5-d4bf3c20db26
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition acr_data = m
+		mode: import
+		source = ```
+				let
+				    Source = Table.Combine({sbs_acr_data, axway_acr_data}),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"hire_date", type date}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type", "key", each [country] & "-" & 
+				(if [performance_adjusted] = null and [performance_rating]  = null then "N/A"
+				else if [performance_adjusted] = null then [performance_rating] else 
+				[performance_adjusted]))
+				in
+				    #"Added Custom"
+				```
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

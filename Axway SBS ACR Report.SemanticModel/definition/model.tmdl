@@ -3,6 +3,7 @@ model Model
 	defaultPowerBIDataSourceVersion: powerBI_V3
 	sourceQueryCulture: en-US
 	dataAccessOptions
+		fastCombine
 		legacyRedirects
 		returnErrorValuesAsNull
 
@@ -12,15 +13,26 @@ queryGroup Hosts
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_ProTooling = ["DevMode"]
+annotation PBI_ProTooling = ["DevMode","TMDLView_Desktop"]
 
-annotation PBI_QueryOrder = ["host_axway_prod","host_axway_qa","host_sbs_prod","host_sbs_qa","axway_acr_data","sbs_acr_data"]
+annotation PBI_QueryOrder = ["host_axway_qa","host_axway","host_sbs_prod","host_sbs_qa","axway_acr_data","sbs_acr_data","acr_data","budget","ecxhange_rate","merit_guidelines","_Measures","currencies","Last Refresh"]
 
-ref table axway_acr_data
-ref table DateTableTemplate_a1c5ce5f-e69f-4e60-88ba-8e57748d61c3
-ref table LocalDateTable_800a5af8-f679-424e-ab7c-a745963969c4
-ref table sbs_acr_data
-ref table LocalDateTable_e6d50880-4bba-4c3f-aecc-8d5f986d9aac
+annotation __TEdtr = 1
+
+ref table acr_data
+ref table DateTableTemplate_1dd7e263-5413-423e-8752-1616a8691daa
+ref table LocalDateTable_33dd91e1-4ffa-4977-8150-6164fe67a9ea
+ref table LocalDateTable_fa1d1433-818e-4e7c-a158-1d157947ff0c
+ref table budget
+ref table ecxhange_rate
+ref table merit_guidelines
+ref table _Measures
+ref table 'Last Refresh'
+ref table LocalDateTable_192cc25a-7bdf-4395-8195-f63ca7bcba4b
+
+ref role Managers
+ref role 'C&B 74Sw'
+ref role SBS
 
 ref cultureInfo en-US
 
