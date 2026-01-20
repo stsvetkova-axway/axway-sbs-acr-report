@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
   "name": "e48149bc360ad6c03b06",
   "displayName": "Base salary",
-  "displayOption": "FitToPage",
+  "displayOption": "FitToWidth",
   "height": 1150,
   "width": 1280,
   "objects": {

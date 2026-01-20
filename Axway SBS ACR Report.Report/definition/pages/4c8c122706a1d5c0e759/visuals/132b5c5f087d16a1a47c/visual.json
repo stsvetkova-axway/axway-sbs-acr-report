@@ -7,7 +7,7 @@
     "z": 1000,
     "height": 223.66609294320136,
     "width": 1261.8330464716007,
-    "tabOrder": 3000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "tableEx",
@@ -627,7 +627,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "46D"
+                  "Value": "55.48148148148148D"
                 }
               }
             }
@@ -669,7 +669,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "45D"
+                  "Value": "49.74074074074074D"
                 }
               }
             }
@@ -781,7 +781,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "91.15490424691679D"
+                  "Value": "86.4214782098734D"
                 }
               }
             }
@@ -795,7 +795,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "80.26850069465577D"
+                  "Value": "76.48845902168048D"
                 }
               }
             }
@@ -911,228 +911,39 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "3015ed7a9dc008721649",
+        "name": "59de409a9cb8cc372b74",
         "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "acr_data"
+          "Arithmetic": {
+            "Left": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Outstanding"
               }
             },
-            "Property": "executive"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "eb7606d16dc315047a48",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
+            "Right": {
+              "ScopedEval": {
+                "Expression": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "_Measures"
+                      }
+                    },
+                    "Property": "Outstanding"
+                  }
+                },
+                "Scope": []
               }
             },
-            "Property": "avg_base_incr_pct_exceeds"
+            "Operator": 3
           }
         },
-        "type": "Advanced"
-      },
-      {
-        "name": "4e24aabe605be5183010",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Outstanding"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5154d9ab78d095650127",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Exceeds"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "730b2193670ca787c8e0",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Meets"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "e0aadfc84c7405a31647",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Partial meets"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "fc09dd7685a303bc42c3",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Insufficient"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "3f068eacac57b0a64e4a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Other"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b90b68d280a905809e2d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "acr_data"
-              }
-            },
-            "Property": "blank"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "48e3b3056dcb700b8590",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "avg_base_incr_pct_outstanding"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "7d24a39e0ab7c976b92a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "avg_base_incr_pct_partial"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "e6d7be3e0e0d3971c0a8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "avg_base_incr_pct_other"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "2783dcdf390468007502",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "avg_base_incr_pct_meets"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "885a63f0667e0000c08e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "avg_base_incr_pct_insufficient"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "e8c57d342064a4975b96",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "promotions_cnt"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "ec884aec5acbda173ec9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "promotions_pct"
-          }
-        },
-        "type": "Advanced"
+        "type": "Advanced",
+        "howCreated": "User"
       }
     ]
   }

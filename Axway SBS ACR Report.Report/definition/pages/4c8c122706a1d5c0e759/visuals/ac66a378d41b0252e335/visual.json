@@ -4,10 +4,10 @@
   "position": {
     "x": 10.886402753872632,
     "y": 371.12736660929431,
-    "z": 4000,
+    "z": 3000,
     "height": 768.97590361445782,
     "width": 1261.8330464716007,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -308,6 +308,18 @@
           {
             "queryRefs": [
               "acr_data.country"
+            ],
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "acr_data"
+                    }
+                  },
+                  "Property": "country"
+                }
+              }
             ],
             "isPinned": true
           },
@@ -680,7 +692,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "46D"
+                  "Value": "62.958513397095075D"
                 }
               }
             }
@@ -722,7 +734,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "45D"
+                  "Value": "50.34446764091858D"
                 }
               }
             }
@@ -778,7 +790,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "76.9087776342958D"
+                  "Value": "72.44962291579945D"
                 }
               }
             }
@@ -834,7 +846,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "91.15490424691679D"
+                  "Value": "84.03774835964491D"
                 }
               }
             }
@@ -848,7 +860,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "80.26850069465577D"
+                  "Value": "73.16611728451252D"
                 }
               }
             }
@@ -1928,6 +1940,31 @@
             }
           }
         }
+      ],
+      "rowTotal": [
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            },
+            "applyToHeaders": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -1946,5 +1983,252 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ee0a4854f991e268268c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "country"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c705614cfb0270eff5ad",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Outstanding"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0583ec55e2babef4c7a3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Exceeds"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "51778249bbe56596f170",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Meets"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a269389854c4e56116a8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Partial meets"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7573f56f583bd463ffa5",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Insufficient"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e3aab4ed5224db21496f",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Other"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "634596d482612e420805",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_outstanding"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6dd64e5e26a581887193",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_exceeds"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "dbed526cbf35cadcd11b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_meets"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9ca6bb0fe4acbbfa9e78",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_partial"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "174e6d4c1e382d2c09ec",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_insufficient"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "110ce6bca1729ea1a411",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "avg_base_incr_pct_other"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3f185f095811ee8e0e74",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "promotions_cnt"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9fc373e8d9beb781bae4",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "promotions_pct"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "62354ac03264a7bb91e6",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "gender"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d8e80febcf466dfd8b1d",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "acr_data"
+                  }
+                },
+                "Property": "blank"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

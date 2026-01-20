@@ -15,7 +15,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode","TMDLView_Desktop"]
 
-annotation PBI_QueryOrder = ["host_axway_qa","host_axway","host_sbs_prod","host_sbs_qa","axway_acr_data","sbs_acr_data","acr_data","budget","ecxhange_rate","merit_guidelines","_Measures","currencies","Last Refresh"]
+annotation PBI_QueryOrder = ["host_axway_qa","host_axway","host_sbs","host_sbs_qa","axway_acr_data","sbs_acr_data","acr_data","budget","ecxhange_rate","merit_guidelines","_Measures","currencies","Last Refresh"]
 
 annotation __TEdtr = 1
 
@@ -33,6 +33,7 @@ ref table LocalDateTable_192cc25a-7bdf-4395-8195-f63ca7bcba4b
 ref role Managers
 ref role 'C&B 74Sw'
 ref role SBS
+ref role Excom
 
 ref cultureInfo en-US
 

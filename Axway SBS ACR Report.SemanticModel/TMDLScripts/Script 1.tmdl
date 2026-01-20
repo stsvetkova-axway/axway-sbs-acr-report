@@ -1,11 +1,12 @@
 createOrReplace
 
 	ref table _Measures
-
-
-
-		measure spent_on_ttc_local = SELECTEDVALUE('acr_data'[spent_on_ttc])
+		measure emp_count = DISTINCTCOUNT ( 'acr_data_all'[employee_id] )
+			formatString: #,0
 			isHidden
-			formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
+
+			changedProperty = FormatString
+
+			changedProperty = IsHidden
 
 

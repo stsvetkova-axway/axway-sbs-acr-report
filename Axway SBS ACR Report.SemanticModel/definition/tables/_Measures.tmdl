@@ -69,55 +69,85 @@ table _Measures
 		formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
 
 	measure Meets =
-			CALCULATE (
-			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
-			    'acr_data'[performance_bin] = "Meets"
+			DIVIDE(
+			    CALCULATE (
+			        DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			        'acr_data'[performance_bin] = "Meets"
+			    ),
+			    [emp_count],
+			    0
 			)
+		formatString: #,##0.0 %
 		isHidden
 		displayFolder: Performance
 		lineageTag: 532d2b1a-fa97-4363-8db3-ec0e82068088
 
 	measure Outstanding =
-			CALCULATE (
-			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
-			    'acr_data'[performance_bin] = "Outstanding"
+			DIVIDE (
+			    CALCULATE (
+			        DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			        'acr_data'[performance_bin] = "Outstanding"
+			    ),
+			    [emp_count],
+			    0
 			)
+		formatString: #,##0.0 %
 		isHidden
 		displayFolder: Performance
 		lineageTag: 12c55c85-c258-4274-a31c-5f2d51d58338
 
 	measure Exceeds =
-			CALCULATE (
-			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
-			    'acr_data'[performance_bin] = "Exceeds"
+			DIVIDE (
+			    CALCULATE (
+			        DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			        'acr_data'[performance_bin] = "Exceeds"
+			    ),
+			    [emp_count],
+			    0
 			)
+		formatString: #,##0.0 %
 		isHidden
 		displayFolder: Performance
 		lineageTag: b822b928-a097-4c98-9cb2-95c67f2905fb
 
 	measure 'Partial meets' =
-			CALCULATE (
-			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
-			    'acr_data'[performance_bin] = "Partial meets"
+			DIVIDE (
+			    CALCULATE (
+			        DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			        'acr_data'[performance_bin] = "Partial meets"
+			    ),
+			    [emp_count],
+			    0
 			)
+		formatString: #,##0.0 %
 		isHidden
 		displayFolder: Performance
 		lineageTag: 2b2f19db-47bc-4d96-8e52-c638ee73fb14
 
 	measure Insufficient =
-			CALCULATE (
-			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
-			    'acr_data'[performance_bin] = "Insufficient"
+			DIVIDE (
+			    CALCULATE (
+			        DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			        'acr_data'[performance_bin] = "Insufficient"
+			    ),
+			    [emp_count],
+			    0
 			)
+		formatString: #,##0.0 %
 		isHidden
 		displayFolder: Performance
 		lineageTag: 32e750f7-7bb1-4cd5-bcf3-af19ed57e51b
 
 	measure Other =
-			CALCULATE (
-			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
-			    'acr_data'[performance_bin] = "Other"
+			DIVIDE (
+			    CALCULATE (
+			        DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			        'acr_data'[performance_bin] = "Other"
+			    ),
+			    [emp_count],
+			    0
 			)
+		formatString: #,##0.0 %
 		isHidden
 		displayFolder: Performance
 		lineageTag: 42b4e5c0-66a5-44a5-8c01-31ae4d181c29
@@ -198,6 +228,7 @@ table _Measures
 
 	measure promotions_pct = DIVIDE ( [promotions_cnt], [merit_elig_cnt], 0 )
 		formatString: 0.0%;-0.0%;0.0%
+		isHidden
 		lineageTag: 2f412b2b-e672-41f6-a398-6b1c673f7936
 
 	measure current_annual_otv_amount_local = SELECTEDVALUE('acr_data'[current_annual_otv_amount])
@@ -235,6 +266,77 @@ table _Measures
 		lineageTag: fc024407-8b05-43f2-a817-d6d3a8d1bc8f
 
 		formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
+
+	measure emp_count =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    acr_data[merit_eligible] = "Yes",
+			    ALL ( 'acr_data' )
+			)
+			
+			//DISTINCTCOUNT ( 'acr_data'[employee_id] )
+		formatString: #,0
+		isHidden
+		lineageTag: 9dc5e260-e655-4433-8ecb-91c3f8cd0b3c
+
+		changedProperty = FormatString
+
+		changedProperty = IsHidden
+
+	measure Exceeds_cnt =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Exceeds"
+			)
+		formatString: 0
+		isHidden
+		displayFolder: Performance
+		lineageTag: 024f457e-c27a-4e71-ba26-bde5f8d388cf
+
+	measure Insufficient_cnt =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Insufficient"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: 2b4f742b-130e-46f6-9311-4a1aa5c84f7f
+
+	measure Meets_cnt =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Meets"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: 2e88602b-48d6-414c-9f77-77fe9f8c9c41
+
+	measure Other_cnt =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Other"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: b575ac11-599a-49e9-84e9-65c6dbb9b0f3
+
+	measure Outstanding_cnt =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Outstanding"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: a840a68d-c50a-4698-9939-a9a4558921ce
+
+	measure 'Partial meets_cnt' =
+			CALCULATE (
+			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			    'acr_data'[performance_bin] = "Partial meets"
+			)
+		isHidden
+		displayFolder: Performance
+		lineageTag: a816cdbd-c14f-44cd-af0a-0350e068b327
 
 	partition _Measures = m
 		mode: import

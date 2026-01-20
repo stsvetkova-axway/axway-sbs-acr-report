@@ -6,7 +6,7 @@ expression host_axway_qa = "10.128.128.78:5432" meta [IsParameterQuery=true, Typ
 
 	annotation PBI_NavigationStepName = Navigation
 
-expression host_sbs_prod = "35mq6mhgpbxuhgzhwzexhy2ppu-xn5t67m4hq5ejpqaq3upfhyogi.datawarehouse.fabric.microsoft.com" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+expression host_sbs = "35mq6mhgpbxuhgzhwzexhy2ppu-qlzdwupkmqhefi3s7w7e2lzh7a.datawarehouse.fabric.microsoft.com" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
 	lineageTag: 617d4a32-4547-4656-a5ae-ef7f333a8d51
 	queryGroup: Hosts
 
@@ -38,7 +38,7 @@ expression axway_acr_data =
 
 expression sbs_acr_data =
 		let
-		    Source = Sql.Database(host_sbs_qa, "sbs_acr_data"),
+		    Source = Sql.Database(host_sbs, "sbs_acr_data"),
 		    dbo_view_sbs_acr_data = Source{[Schema="dbo",Item="view_sbs_acr_data"]}[Data],
 		    #"Added Custom" = Table.AddColumn(dbo_view_sbs_acr_data, "company", each "SBS"),
 		    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"last_name", type text}, {"first_name", type text}})
@@ -50,7 +50,7 @@ expression sbs_acr_data =
 
 	annotation PBI_ResultType = Table
 
-expression host_axway = "10.128.128.146:5432" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+expression host_axway = "10.128.128.78:5432" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
 	lineageTag: ff28e6aa-9ae6-4ca1-ba46-ae1981d6bc0e
 	queryGroup: Hosts
 

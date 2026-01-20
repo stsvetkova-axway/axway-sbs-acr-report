@@ -1,0 +1,7 @@
+role Excom
+	modelPermission: read
+
+	tablePermission acr_data = acr_data[executive_email] = USERPRINCIPALNAME()
+
+	annotation PBI_Id = a97989277ed348d5aa2d73e1f397cfee
+

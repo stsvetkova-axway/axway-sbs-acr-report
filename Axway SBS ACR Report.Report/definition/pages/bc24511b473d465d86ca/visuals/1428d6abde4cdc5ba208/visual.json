@@ -87,8 +87,8 @@
                 }
               },
               "queryRef": "acr_data.job_title",
-              "nativeQueryRef": "Job title/ job stream",
-              "displayName": "Job title/ job stream"
+              "nativeQueryRef": "Job title (Axway) / Job stream (SBS)",
+              "displayName": "Job title (Axway) / Job stream (SBS)"
             },
             {
               "field": {
@@ -102,8 +102,8 @@
                 }
               },
               "queryRef": "acr_data.job_grade",
-              "nativeQueryRef": "Job grade / level",
-              "displayName": "Job grade / level"
+              "nativeQueryRef": "Job grade (Axway) / Job level (SBS)",
+              "displayName": "Job grade (Axway) / Job level (SBS)"
             },
             {
               "field": {
@@ -117,8 +117,8 @@
                 }
               },
               "queryRef": "acr_data.compensation_manager",
-              "nativeQueryRef": "Compensation manager / Head of",
-              "displayName": "Compensation manager / Head of"
+              "nativeQueryRef": "Compensation manager (Axway) / Head of (SBS)",
+              "displayName": "Compensation manager (Axway) / Head of (SBS)"
             },
             {
               "field": {
@@ -132,8 +132,8 @@
                 }
               },
               "queryRef": "acr_data.general_manager",
-              "nativeQueryRef": "GM",
-              "displayName": "GM"
+              "nativeQueryRef": "GM / Excom direct report",
+              "displayName": "GM / Excom direct report"
             },
             {
               "field": {
@@ -207,8 +207,8 @@
                 }
               },
               "queryRef": "Sum(acr_data.current_market_pct_base)",
-              "nativeQueryRef": "Current market % base",
-              "displayName": "Current market % base"
+              "nativeQueryRef": "Current market % base (Axway only)",
+              "displayName": "Current market % base (Axway only)"
             },
             {
               "field": {
@@ -297,8 +297,8 @@
                 }
               },
               "queryRef": "Sum(acr_data.current_market_pctofttc)",
-              "nativeQueryRef": "Current market % TTC",
-              "displayName": "Current market % TTC"
+              "nativeQueryRef": "Current market % TTC (Axway only)",
+              "displayName": "Current market % TTC (Axway only)"
             },
             {
               "field": {
@@ -357,8 +357,8 @@
                 }
               },
               "queryRef": "acr_data.new_job_title",
-              "nativeQueryRef": "New job title / job stream",
-              "displayName": "New job title / job stream"
+              "nativeQueryRef": "New job title (Axway) / Job stream (SBS)",
+              "displayName": "New job title (Axway) / Job stream (SBS)"
             },
             {
               "field": {
@@ -372,8 +372,8 @@
                 }
               },
               "queryRef": "acr_data.new_job_grade",
-              "nativeQueryRef": "New job grade / level",
-              "displayName": "New job grade / level"
+              "nativeQueryRef": "New job grade (Axway) / New job level (SBS)",
+              "displayName": "New job grade (Axway) / New job level (SBS)"
             },
             {
               "field": {
@@ -432,8 +432,8 @@
                 }
               },
               "queryRef": "Sum(acr_data.proposed_mkt_base_pct)",
-              "nativeQueryRef": "Proposed market % base",
-              "displayName": "Proposed market % base"
+              "nativeQueryRef": "Proposed market % base (Axway only)",
+              "displayName": "Proposed market % base (Axway only)"
             },
             {
               "field": {
@@ -522,8 +522,8 @@
                 }
               },
               "queryRef": "Sum(acr_data.proposed_market_pctofttc)",
-              "nativeQueryRef": "Proposed market % TTC",
-              "displayName": "Proposed market % TTC"
+              "nativeQueryRef": "Proposed market % TTC (Axway only)",
+              "displayName": "Proposed market % TTC (Axway only)"
             },
             {
               "field": {
@@ -695,6 +695,13 @@
                   "Value": "true"
                 }
               }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -783,7 +790,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "103.66952031958789D"
+                  "Value": "124.00593108277498D"
                 }
               }
             }
@@ -853,7 +860,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "183.1429353870298D"
+                  "Value": "264.15747067821695D"
                 }
               }
             }
@@ -903,6 +910,272 @@
           "selector": {
             "metadata": "_Measures.spent_on_ttc_local"
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "136.76789788514273D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.job_grade"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "222.88282207538253D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.compensation_manager"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "150.90973435868545D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.current_otv_pct)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "145.88281868566904D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.current_market_pctofttc)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "170.43865836298016D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.new_job_grade"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "163.89628286386946D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.proposed_mkt_base_pct)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "159.923190409286D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.proposed_market_pctofttc)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "165D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.employee_name"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "87D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.employee_number"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "78D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.country"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "75D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.hire_date"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "234D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.job_title"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "163D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.general_manager"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "141D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.executive"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "65D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.currency"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "132D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.current_annual_base_local"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "178D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.current_annual_otv_amount_local"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "110D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(acr_data.current_ttc_eur)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "173D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "acr_data.performance_rating"
+          }
         }
       ]
     },
@@ -926,7 +1199,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "cdb0ea3a89adb67250c9",
+        "name": "3fde17004da44290c83f",
         "field": {
           "Column": {
             "Expression": {
@@ -940,7 +1213,7 @@
         "type": "Categorical"
       },
       {
-        "name": "0fee8069b3c801205ed5",
+        "name": "ed2803f8b96360e5c468",
         "field": {
           "Column": {
             "Expression": {
@@ -954,7 +1227,7 @@
         "type": "Categorical"
       },
       {
-        "name": "c4b95f8fa655a1d8800c",
+        "name": "6712ce75d3afb45daf9a",
         "field": {
           "Column": {
             "Expression": {
@@ -968,7 +1241,7 @@
         "type": "Categorical"
       },
       {
-        "name": "78e7bbbbb35cc13eb0c0",
+        "name": "daed4d53c677725d6acb",
         "field": {
           "Column": {
             "Expression": {
@@ -982,7 +1255,7 @@
         "type": "Categorical"
       },
       {
-        "name": "83a043ff6d1b7a26968e",
+        "name": "3294d450ca4e8eba5573",
         "field": {
           "Column": {
             "Expression": {
@@ -996,7 +1269,7 @@
         "type": "Categorical"
       },
       {
-        "name": "2dd474780bd0246103ac",
+        "name": "f9f421378cfcd6c24db8",
         "field": {
           "Column": {
             "Expression": {
@@ -1010,7 +1283,7 @@
         "type": "Categorical"
       },
       {
-        "name": "5d2eed5682a8689ba290",
+        "name": "fe217f851d0d97afc698",
         "field": {
           "Column": {
             "Expression": {
@@ -1024,7 +1297,7 @@
         "type": "Categorical"
       },
       {
-        "name": "62e185fa14b28e53dbe0",
+        "name": "23d9ef363514dba1ee67",
         "field": {
           "Column": {
             "Expression": {
@@ -1038,7 +1311,7 @@
         "type": "Categorical"
       },
       {
-        "name": "8385db48593c0224c000",
+        "name": "27eb16499fd993713208",
         "field": {
           "Column": {
             "Expression": {
@@ -1052,7 +1325,7 @@
         "type": "Categorical"
       },
       {
-        "name": "5a1fa4066c27dcbba638",
+        "name": "785b00bd7ebeacf23fa2",
         "field": {
           "Column": {
             "Expression": {
@@ -1066,7 +1339,7 @@
         "type": "Categorical"
       },
       {
-        "name": "a0cf81ccd58c2613d4e3",
+        "name": "ed992d40e788a878a23c",
         "field": {
           "Column": {
             "Expression": {
@@ -1080,7 +1353,7 @@
         "type": "Advanced"
       },
       {
-        "name": "02294b296872dc00aa90",
+        "name": "1baec24f7afa7b945bc5",
         "field": {
           "Column": {
             "Expression": {
@@ -1094,7 +1367,7 @@
         "type": "Advanced"
       },
       {
-        "name": "41ea6864a5540e264757",
+        "name": "395e13ba85e9d342ab18",
         "field": {
           "Column": {
             "Expression": {
@@ -1108,7 +1381,7 @@
         "type": "Advanced"
       },
       {
-        "name": "85deb9857354c60e1125",
+        "name": "9c5b176ac2eb2bd9ca34",
         "field": {
           "Column": {
             "Expression": {
@@ -1122,7 +1395,7 @@
         "type": "Categorical"
       },
       {
-        "name": "60cc1cb0410b7b379b69",
+        "name": "fc64de7aedd89c3aa60d",
         "field": {
           "Column": {
             "Expression": {
@@ -1136,7 +1409,7 @@
         "type": "Categorical"
       },
       {
-        "name": "aa0c66f01e08043e1bc9",
+        "name": "427f5b5c2b15cb9c8c7a",
         "field": {
           "Column": {
             "Expression": {
@@ -1150,7 +1423,7 @@
         "type": "Categorical"
       },
       {
-        "name": "b172fa8b20e7a072a2e3",
+        "name": "e8af3128842ea353b612",
         "field": {
           "Column": {
             "Expression": {
@@ -1164,7 +1437,7 @@
         "type": "Categorical"
       },
       {
-        "name": "02a26638431b3d2b4da4",
+        "name": "3407f431e5ddc502cbe1",
         "field": {
           "Column": {
             "Expression": {
@@ -1178,7 +1451,7 @@
         "type": "Categorical"
       },
       {
-        "name": "90f1939909c0bbbeb67c",
+        "name": "336bc4e10ef85d9a1468",
         "field": {
           "Column": {
             "Expression": {
@@ -1192,7 +1465,7 @@
         "type": "Advanced"
       },
       {
-        "name": "3222f6d3969a527dd000",
+        "name": "0d5d027fc52be87e2c76",
         "field": {
           "Column": {
             "Expression": {
@@ -1206,7 +1479,7 @@
         "type": "Advanced"
       },
       {
-        "name": "29217c973911dc707ca4",
+        "name": "88d0cf14e06e9e457eb9",
         "field": {
           "Column": {
             "Expression": {
@@ -1220,7 +1493,7 @@
         "type": "Advanced"
       },
       {
-        "name": "63d24a316a50e8ee1194",
+        "name": "0eb55f2400bec317f8ce",
         "field": {
           "Column": {
             "Expression": {
@@ -1234,7 +1507,7 @@
         "type": "Advanced"
       },
       {
-        "name": "e2587a8891a4de9019b4",
+        "name": "63cad26677b3c7703d99",
         "field": {
           "Column": {
             "Expression": {
@@ -1248,7 +1521,7 @@
         "type": "Advanced"
       },
       {
-        "name": "a676ebf016dd904a27e9",
+        "name": "313e244cb42647d3ddd1",
         "field": {
           "Column": {
             "Expression": {
@@ -1262,7 +1535,7 @@
         "type": "Categorical"
       },
       {
-        "name": "b336d023bcd7e48008b2",
+        "name": "cafa898a1e7d381f6495",
         "field": {
           "Column": {
             "Expression": {
@@ -1276,7 +1549,7 @@
         "type": "Categorical"
       },
       {
-        "name": "eb2e551893a9915cde80",
+        "name": "79948c3fdd99a38a7c5a",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -1295,7 +1568,7 @@
         "type": "Advanced"
       },
       {
-        "name": "ee1b7b68675b4d978018",
+        "name": "343389ad73e4281ce9ea",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -1314,7 +1587,7 @@
         "type": "Advanced"
       },
       {
-        "name": "2ff6f4c4d0d975c62ca0",
+        "name": "4d4d38c85f91c4cc81d0",
         "field": {
           "Measure": {
             "Expression": {
@@ -1328,7 +1601,7 @@
         "type": "Advanced"
       },
       {
-        "name": "fed47c5674ddab05a27d",
+        "name": "95ecb849163d496979d0",
         "field": {
           "Column": {
             "Expression": {
@@ -1342,7 +1615,7 @@
         "type": "Advanced"
       },
       {
-        "name": "b9c1268ab023b806e0c0",
+        "name": "daf3e9c3fdacf3e117a1",
         "field": {
           "Column": {
             "Expression": {
@@ -1356,7 +1629,7 @@
         "type": "Advanced"
       },
       {
-        "name": "45b0c7694e8edce0c30d",
+        "name": "dc3689234e09e4b29974",
         "field": {
           "Column": {
             "Expression": {
@@ -1370,7 +1643,7 @@
         "type": "Advanced"
       },
       {
-        "name": "7f472cbcd82b8c3ccc22",
+        "name": "ce8b31c68b801d9498cb",
         "field": {
           "Column": {
             "Expression": {
@@ -1384,7 +1657,7 @@
         "type": "Advanced"
       },
       {
-        "name": "9383d5f81cebea5d059a",
+        "name": "f26d9f69ea70851c1640",
         "field": {
           "Column": {
             "Expression": {
@@ -1398,7 +1671,7 @@
         "type": "Advanced"
       },
       {
-        "name": "9651a1156023309191ea",
+        "name": "b1703216dae78c5d1de9",
         "field": {
           "Column": {
             "Expression": {
@@ -1412,7 +1685,7 @@
         "type": "Advanced"
       },
       {
-        "name": "f0d3ef4ed8902020a851",
+        "name": "4de52f3e6bc4578f65f3",
         "field": {
           "Measure": {
             "Expression": {
@@ -1426,7 +1699,7 @@
         "type": "Advanced"
       },
       {
-        "name": "8a944a3961b60098cd70",
+        "name": "439861f5728faaf40243",
         "field": {
           "Measure": {
             "Expression": {
@@ -1440,7 +1713,7 @@
         "type": "Advanced"
       },
       {
-        "name": "84291ce250e7ae0b7063",
+        "name": "812bd4f4f86fe6154e48",
         "field": {
           "Measure": {
             "Expression": {
@@ -1454,7 +1727,7 @@
         "type": "Advanced"
       },
       {
-        "name": "ed89be0b24da0881cc55",
+        "name": "568e888dc210c6750149",
         "field": {
           "Measure": {
             "Expression": {
@@ -1468,7 +1741,7 @@
         "type": "Advanced"
       },
       {
-        "name": "7abb407bc6e7e86a4e10",
+        "name": "98f45ded7585d3b97ff2",
         "field": {
           "Measure": {
             "Expression": {
@@ -1482,7 +1755,7 @@
         "type": "Advanced"
       },
       {
-        "name": "bd7db506dd9b2182d253",
+        "name": "273683a765345a9954cd",
         "field": {
           "Measure": {
             "Expression": {
@@ -1496,7 +1769,7 @@
         "type": "Advanced"
       },
       {
-        "name": "43a1ee72d3d549535a5c",
+        "name": "ca4e94c0b27da18d8814",
         "field": {
           "Aggregation": {
             "Expression": {

@@ -30,7 +30,7 @@ table budget
 		mode: import
 		source =
 				let
-				    Source = Sql.Database(host_sbs_qa, "sbs_acr_data"),
+				    Source = Sql.Database(host_sbs, "sbs_acr_data"),
 				    dbo_view_sbs_acr_data = Source{[Schema="dbo",Item="budget"]}[Data]
 				in
 				    dbo_view_sbs_acr_data

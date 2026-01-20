@@ -1055,7 +1055,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Job title/ job stream": {
+			          "Job title (Axway) / Job stream (SBS)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1197,7 +1197,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Job grade / level": {
+			          "Job grade (Axway) / Job level (SBS)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1599,7 +1599,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Compensation manager / Head of": {
+			          "Compensation manager (Axway) / Head of (SBS)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1869,7 +1869,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "GM": {
+			          "GM / Excom direct report": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2637,7 +2637,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Current market % base": {
+			          "Current market % base (Axway only)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3103,7 +3103,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Current market % TTC": {
+			          "Current market % TTC (Axway only)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3525,7 +3525,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "New job title / job stream": {
+			          "New job title (Axway) / Job stream (SBS)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3673,7 +3673,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "New job grade / level": {
+			          "New job grade (Axway) / New job level (SBS)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3883,7 +3883,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Proposed market % base": {
+			          "Proposed market % base (Axway only)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4107,7 +4107,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Proposed market % TTC": {
+			          "Proposed market % TTC (Axway only)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
