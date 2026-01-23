@@ -268,13 +268,14 @@ table _Measures
 		formatStringDefinition = SELECTEDVALUE(ecxhange_rate[format])
 
 	measure emp_count =
-			CALCULATE (
-			    DISTINCTCOUNT ( 'acr_data'[employee_id] ),
-			    acr_data[merit_eligible] = "Yes",
-			    ALL ( 'acr_data' )
-			)
 			
-			//DISTINCTCOUNT ( 'acr_data'[employee_id] )
+			// CALCULATE (
+			//     DISTINCTCOUNT ( 'acr_data'[employee_id] ),
+			//     acr_data[merit_eligible] = "Yes",
+			//     ALL ( 'acr_data' )
+			// )
+			
+			DISTINCTCOUNT ( 'acr_data'[employee_id] )
 		formatString: #,0
 		isHidden
 		lineageTag: 9dc5e260-e655-4433-8ecb-91c3f8cd0b3c
