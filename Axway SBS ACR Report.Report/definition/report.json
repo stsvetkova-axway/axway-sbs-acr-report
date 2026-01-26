@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.0.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.1.0/schema.json",
   "themeCollection": {
     "baseTheme": {
       "name": "CY25SU11",
@@ -24,6 +24,7 @@
     "filters": [
       {
         "name": "ff7e2b8605d30e4ee793",
+        "displayName": "Company",
         "field": {
           "Column": {
             "Expression": {
@@ -39,6 +40,7 @@
       },
       {
         "name": "0b02587eb557bd2293e8",
+        "displayName": "Country",
         "field": {
           "Column": {
             "Expression": {
@@ -95,6 +97,22 @@
               }
             },
             "Property": "general_manager"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "6af678f31005a164c80b",
+        "displayName": "Employee",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "acr_data"
+              }
+            },
+            "Property": "employee_name"
           }
         },
         "type": "Categorical",

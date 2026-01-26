@@ -38,7 +38,7 @@ table ecxhange_rate
 		mode: import
 		source =
 				let
-				    Source = Sql.Database(host_sbs, "sbs_acr_data"),
+				    Source = Sql.Database(host_sbs, "sbs_acr_data", [ConnectionTimeout = #duration(0,0,2,0), CommandTimeout = #duration(0,0,15,0)]),
 				    dbo_view_sbs_acr_data = Source{[Schema="dbo",Item="exchange_rate"]}[Data],
 				    #"Merged Queries" = Table.NestedJoin(dbo_view_sbs_acr_data, {"currency"}, currencies, {"Currency code"}, "currencies", JoinKind.LeftOuter),
 				    #"Expanded currencies" = Table.ExpandTableColumn(#"Merged Queries", "currencies", {"Format"}, {"format"})

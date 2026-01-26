@@ -30,7 +30,7 @@ table budget
 		mode: import
 		source =
 				let
-				    Source = Sql.Database(host_sbs, "sbs_acr_data"),
+				    Source = Sql.Database(host_sbs, "sbs_acr_data", [ConnectionTimeout = #duration(0,0,2,0), CommandTimeout = #duration(0,0,15,0)]),
 				    dbo_view_sbs_acr_data = Source{[Schema="dbo",Item="budget"]}[Data]
 				in
 				    dbo_view_sbs_acr_data
@@ -39,5 +39,5 @@ table budget
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 

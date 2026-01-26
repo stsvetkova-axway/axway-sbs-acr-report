@@ -89,7 +89,7 @@ table merit_guidelines
 		mode: import
 		source =
 				let
-				    Source = Sql.Database(host_sbs, "sbs_acr_data"),
+				    Source = Sql.Database(host_sbs, "sbs_acr_data", [ConnectionTimeout = #duration(0,0,2,0), CommandTimeout = #duration(0,0,15,0)]),
 				    dbo_view_sbs_acr_data = Source{[Schema="dbo",Item="merit_guidelines"]}[Data],
 				    #"Added Custom" = Table.AddColumn(dbo_view_sbs_acr_data, "key", each [country] & "-" & [performance])
 				in
@@ -99,5 +99,5 @@ table merit_guidelines
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
