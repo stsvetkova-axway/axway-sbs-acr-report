@@ -236,18 +236,6 @@ table acr_data
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column current_otv_pctofbase
-		dataType: double
-		isHidden
-		formatString: 0.00%;-0.00%;0.00%
-		lineageTag: 13ecf269-f01d-4d2a-9b47-478f096adfe0
-		summarizeBy: sum
-		sourceColumn: current_otv_pctofbase
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
 	column current_ttc
 		dataType: double
 		isHidden
